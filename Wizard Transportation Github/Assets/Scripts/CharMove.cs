@@ -4,6 +4,16 @@ using UnityEngine;
 
 public class CharMove : MonoBehaviour
 {
-    public float vertSpeed = 5f;
-    public float horizSpeed = 5f;
+    [SerializeField] GameObject charGameObject;
+    public SpriteRenderer charSprite;
+
+    private void Start()
+    {
+        
+    }
+    private void Update()
+    {
+        
+    }
+    
 }
