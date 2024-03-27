@@ -960,7 +960,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 737184266}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 9950375}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: Accept
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &737184266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1081,7 +1093,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 745692147}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 9950375}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: Deny
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &745692147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2019,6 +2043,9 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1490450148598525469, guid: fec9d768325d7a44485aeec82c3bca88, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2031491564}
     - targetCorrespondingSourceObject: {fileID: 9220489303218414263, guid: fec9d768325d7a44485aeec82c3bca88, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2031491562}
@@ -2042,6 +2069,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeDuration: 2
   targetColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &2031491563 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1490450148598525469, guid: fec9d768325d7a44485aeec82c3bca88, type: 3}
+  m_PrefabInstance: {fileID: 2031491560}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2031491564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031491563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8b91e0d4be8e2642887c8deeeca710c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  display: {fileID: 11400000, guid: ae6fb872622462b4aba1e2f253e75c85, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

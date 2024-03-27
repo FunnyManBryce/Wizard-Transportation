@@ -22,4 +22,12 @@ public class GameManager : MonoBehaviour
             PopularityBar.SetPopularity(popularity);
         }
     }
+    public void Accept()
+    {
+
+    }
+    public void Deny()
+    {
+
+    }
 }

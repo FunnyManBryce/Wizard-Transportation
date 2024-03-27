@@ -8,8 +8,8 @@ public class CharVariables : ScriptableObject
     //Real stats
     public string name;
     public string species;
-    public float magicLevel;
-    public float adventurerRank;
+    public int magicLevel;
+    public string adventurerRank;
     public float age;
     public string characterClass;
     public bool isAllowed;
