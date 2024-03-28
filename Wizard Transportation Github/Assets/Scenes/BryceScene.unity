@@ -153,6 +153,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59afe9535b2c9b44bb25365df7e61002, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characters: []
+  currentCharacter: {fileID: 2031491563}
+  currentVariables: {fileID: 0}
+  charactersLeft: 0
   popularity: 5
   gold: 100
   PopularityBar: {fileID: 75548031}
@@ -168,7 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bac6db5a202d3e4295ff3643511de33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeScale: 2
+  timeScale: 10
   startTime: 600
   currentTime: 600
 --- !u!4 &9950377
