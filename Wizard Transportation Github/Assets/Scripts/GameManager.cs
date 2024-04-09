@@ -53,6 +53,6 @@ public class GameManager : MonoBehaviour
         {
             popularity = popularity - currentVariables.reputationReward;
             PopularityBar.SetPopularity(popularity);
-        }
+        } 
     }
 }
