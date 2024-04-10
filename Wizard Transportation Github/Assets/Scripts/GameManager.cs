@@ -6,8 +6,10 @@ public class GameManager : MonoBehaviour
 {
     public List<GameObject> characters;
     public GameObject currentCharacter;
+    public GameObject gamePanel;
+    public GameObject outlibe;
+    public GameObject nightPanel;
     public CharVariables currentVariables;
-    public int charactersLeft;
     public int popularity = 70;
     public int gold = 100;
 
@@ -20,6 +22,10 @@ public class GameManager : MonoBehaviour
     }
     private void Update()
     {
+        if(characters.Count == 0)
+        {
+            EndDay();
+        }
         if (popularity > 100)
         {
             popularity = 100;
@@ -40,6 +46,11 @@ public class GameManager : MonoBehaviour
             popularity = popularity - currentVariables.reputationReward;
             PopularityBar.SetPopularity(popularity);
         }
+        characters.Remove(currentCharacter);
+        Destroy(currentCharacter);
+        currentCharacter = characters[0];
+        currentCharacter.gameObject.SetActive(true);
+
     }
     public void Deny()
     {
@@ -53,6 +64,17 @@ public class GameManager : MonoBehaviour
         {
             popularity = popularity - currentVariables.reputationReward;
             PopularityBar.SetPopularity(popularity);
-        } 
+        }
+        characters.Remove(currentCharacter);
+        Destroy(currentCharacter);
+        currentCharacter = characters[0];
+        currentCharacter.gameObject.SetActive(true);
+
+    }
+    public void EndDay()
+    {
+        outlibe.SetActive(false);
+        gamePanel.SetActive(false);
+        nightPanel.SetActive(true);
     }
 }
