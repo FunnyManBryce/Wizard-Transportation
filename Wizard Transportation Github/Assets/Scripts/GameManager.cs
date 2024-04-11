@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public List<GameObject> possibleCharacters;
     public List<GameObject> characters;
+    public int charPerDay;
     public GameObject currentCharacter;
     public GameObject gamePanel;
     public GameObject outlibe;
@@ -19,6 +21,10 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         PopularityBar.SetPopularity(popularity);
+        /*for(int i = 0; i = charPerDay; i++)
+        {
+            characters.Add(possibleCharacters[Random.Range(0, possibleCharacters.Count)]);
+        }*/
     }
     private void Update()
     {

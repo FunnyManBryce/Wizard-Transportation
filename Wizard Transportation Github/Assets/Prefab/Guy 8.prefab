@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7290402163415209088}
   - component: {fileID: 1670931361839494639}
   m_Layer: 0
-  m_Name: Guy 2
+  m_Name: Guy 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8b91e0d4be8e2642887c8deeeca710c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  display: {fileID: 11400000, guid: 37bdb00783b610e4b9c4ea017dce1c6b, type: 2}
+  display: {fileID: 11400000, guid: b55ff50497079914caf8a80cf852bc26, type: 2}
 --- !u!1 &9220489303218414263
 GameObject:
   m_ObjectHideFlags: 0
