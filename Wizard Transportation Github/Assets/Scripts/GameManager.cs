@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
 
 
     public PopBar PopularityBar;
+    public TimeManager timeManager;
 
     private void Start()
     {
@@ -82,5 +83,13 @@ public class GameManager : MonoBehaviour
         outlibe.SetActive(false);
         gamePanel.SetActive(false);
         nightPanel.SetActive(true);
+        timeManager.timeScale = 0f;
+    }
+    public void StartDay()
+    {
+        outlibe.SetActive(true);
+        gamePanel.SetActive(true);
+        nightPanel.SetActive(false);
+        timeManager.timeScale = 10f;
     }
 }
