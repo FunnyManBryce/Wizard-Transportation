@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e011aea718c5ebb46846178568346d2f, type: 3}
-  m_Name: Robot 1
+  m_Name: Unholy Knight
   m_EditorClassIdentifier: 
   name: Guy 1
-  species: Robot
+  species: Human
   magicLevel: 1
   adventurerRank: E
   age: 25
   characterClass: Warrior
-  isAllowed: 0
-  isRobot: 1
+  isAllowed: 1
+  isRobot: 0
   destination: City
   hasBag: 0
   belongings: []
@@ -32,8 +32,8 @@ MonoBehaviour:
   ticketExpirationDate: 
   ticketName: Guy 1
   ticketDestination: City
-  goldReward: 5
-  reputationReward: 10
+  goldReward: 2
+  reputationReward: 5
   isBribing: 0
   bribeAmount: 0
   denialReason: 
