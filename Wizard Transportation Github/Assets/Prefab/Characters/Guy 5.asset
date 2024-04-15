@@ -33,7 +33,7 @@ MonoBehaviour:
   ticketName: Guy 1
   ticketDestination: City
   goldReward: 2
-  reputationReward: 1
+  reputationReward: 5
   isBribing: 0
   bribeAmount: 0
   denialReason: 

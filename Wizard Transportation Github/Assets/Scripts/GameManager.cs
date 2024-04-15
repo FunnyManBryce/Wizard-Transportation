@@ -27,10 +27,11 @@ public class GameManager : MonoBehaviour
             Debug.Log("balls");
             currentCharacter = possibleCharacters[Random.Range(0, possibleCharacters.Count)];
             characters.Add(currentCharacter);
-            possibleCharacters.Remove(currentCharacter);
-            currentCharacter.transform.position = new Vector3(-6.5f, -1.5f, 0);
+            //possibleCharacters.Remove(currentCharacter);
+            //currentCharacter.transform.position = new Vector3(-6.5f, -1.5f, 0);
         }
         currentCharacter = characters[0];
+        currentCharacter.SetActive(true);
     }
     private void Update()
     {
@@ -59,9 +60,11 @@ public class GameManager : MonoBehaviour
             PopularityBar.SetPopularity(popularity);
         }
         characters.Remove(currentCharacter);
-        Destroy(currentCharacter);
+        //Destroy(currentCharacter);
+        //currentCharacter.transform.position = new Vector3(-30, -1.5f, 0);
+        currentCharacter.SetActive(false);
         currentCharacter = characters[0];
-        currentCharacter.gameObject.SetActive(true);
+        currentCharacter.SetActive(true);
 
     }
     public void Deny()
@@ -78,9 +81,11 @@ public class GameManager : MonoBehaviour
             PopularityBar.SetPopularity(popularity);
         }
         characters.Remove(currentCharacter);
-        Destroy(currentCharacter);
+        //Destroy(currentCharacter);
+        //currentCharacter.transform.position = new Vector3(-30, -1.5f, 0);
+        currentCharacter.SetActive(false);
         currentCharacter = characters[0];
-        currentCharacter.gameObject.SetActive(true);
+        currentCharacter.SetActive(true);
 
     }
     public void EndDay()
@@ -92,9 +97,20 @@ public class GameManager : MonoBehaviour
     }
     public void StartDay()
     {
+        Debug.Log("cock");
         outlibe.SetActive(true);
         gamePanel.SetActive(true);
         nightPanel.SetActive(false);
         timeManager.timeScale = 10f;
+        for (int i = 1; i <= charPerDay; i++)
+        {
+            Debug.Log("balls");
+            currentCharacter = possibleCharacters[Random.Range(0, possibleCharacters.Count)];
+            characters.Add(currentCharacter);
+            //possibleCharacters.Remove(currentCharacter);
+            //currentCharacter.transform.position = new Vector3(-6.5f, -1.5f, 0);
+        }
+        currentCharacter = characters[0];
+        currentCharacter.SetActive(true);
     }
 }
