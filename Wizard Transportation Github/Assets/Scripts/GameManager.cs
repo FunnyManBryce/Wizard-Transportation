@@ -22,10 +22,15 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         PopularityBar.SetPopularity(popularity);
-        /*for(int i = 0; i = charPerDay; i++)
+        for(int i = 1; i <= charPerDay; i++)
         {
-            characters.Add(possibleCharacters[Random.Range(0, possibleCharacters.Count)]);
-        }*/
+            Debug.Log("balls");
+            currentCharacter = possibleCharacters[Random.Range(0, possibleCharacters.Count)];
+            characters.Add(currentCharacter);
+            possibleCharacters.Remove(currentCharacter);
+            currentCharacter.transform.position = new Vector3(-6.5f, -1.5f, 0);
+        }
+        currentCharacter = characters[0];
     }
     private void Update()
     {
