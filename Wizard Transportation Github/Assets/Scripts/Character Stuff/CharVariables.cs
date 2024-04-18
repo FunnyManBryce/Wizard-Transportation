@@ -10,6 +10,7 @@ public class CharVariables : ScriptableObject
     public string species;
     public int magicLevel;
     public string adventurerRank;
+    public string height;
     public float age;
     public string characterClass;
     public bool isAllowed;
@@ -19,20 +20,6 @@ public class CharVariables : ScriptableObject
     //Bag
     public bool hasBag;
     public GameObject[] belongings;
-
-    //ID Stats
-    public bool hasID;
-    public string IDName;
-    public string IDSpecies;
-    public string IDAge;
-    public string IDClass;
-    public string IDHeight;
-
-    //TicketStats
-    public bool hasTicket;
-    public string ticketExpirationDate;
-    public string ticketName;
-    public string ticketDestination;
 
     //Accepting/Denying Stats
     public int goldReward;
