@@ -26,6 +26,7 @@ public class CharVariables : ScriptableObject
     public string IDSpecies;
     public string IDAge;
     public string IDClass;
+    public string IDHeight;
 
     //TicketStats
     public bool hasTicket;
@@ -36,6 +37,7 @@ public class CharVariables : ScriptableObject
     //Accepting/Denying Stats
     public int goldReward;
     public int reputationReward;
+    public int reputationPenalty;
     public bool isBribing;
     public int bribeAmount;
     public string denialReason;

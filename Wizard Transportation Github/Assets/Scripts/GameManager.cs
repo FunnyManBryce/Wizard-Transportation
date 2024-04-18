@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            popularity = popularity - currentVariables.reputationReward;
+            popularity = popularity - currentVariables.reputationPenalty;
             PopularityBar.SetPopularity(popularity);
         }
         characters.Remove(currentCharacter);
@@ -77,7 +77,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            popularity = popularity - currentVariables.reputationReward;
+            popularity = popularity - currentVariables.reputationPenalty;
             PopularityBar.SetPopularity(popularity);
         }
         characters.Remove(currentCharacter);

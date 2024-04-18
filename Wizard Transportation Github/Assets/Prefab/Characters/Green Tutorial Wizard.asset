@@ -28,12 +28,14 @@ MonoBehaviour:
   IDSpecies: Human
   IDAge: 25
   IDClass: Warrior
+  IDHeight: 
   hasTicket: 1
   ticketExpirationDate: 
   ticketName: Guy 1
   ticketDestination: City
   goldReward: 2
   reputationReward: 5
+  reputationPenalty: 10
   isBribing: 0
   bribeAmount: 0
   denialReason: 
