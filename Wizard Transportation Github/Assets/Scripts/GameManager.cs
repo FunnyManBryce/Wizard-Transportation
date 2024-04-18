@@ -14,7 +14,8 @@ public class GameManager : MonoBehaviour
     public CharVariables currentVariables;
     public int popularity = 70;
     public int gold = 100;
-
+    public float deskXStart, deskXEnd;
+    public float deskYStart, deskYEnd;
 
     public PopBar PopularityBar;
     public TimeManager timeManager;
@@ -112,5 +113,9 @@ public class GameManager : MonoBehaviour
         }
         currentCharacter = characters[0];
         currentCharacter.SetActive(true);
+    }
+    public void OpenBelongings()
+    {
+
     }
 }
