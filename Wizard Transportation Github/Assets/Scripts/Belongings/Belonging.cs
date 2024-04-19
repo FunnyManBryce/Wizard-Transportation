@@ -14,7 +14,7 @@ public class Belonging : ScriptableObject
     public string IDHeight;
 
     //PersonalItem
-    public bool isOther
+    public bool isOther;
     
     
 }
