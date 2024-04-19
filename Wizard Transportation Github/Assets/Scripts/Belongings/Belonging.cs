@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "New Belonging", menuName = "Belonging")]
 public class Belonging : ScriptableObject
 {
     //ID Stats
@@ -12,9 +13,8 @@ public class Belonging : ScriptableObject
     public string IDClass;
     public string IDHeight;
 
-    //TicketStats
-    public bool isTicket;
-    public string ticketExpirationDate;
-    public string ticketName;
-    public string ticketDestination;
+    //PersonalItem
+    public bool isOther
+    
+    
 }
