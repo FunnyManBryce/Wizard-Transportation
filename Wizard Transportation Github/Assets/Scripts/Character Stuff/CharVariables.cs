@@ -29,6 +29,7 @@ public class CharVariables : ScriptableObject
     public int bribeAmount;
     public string denialReason;
 
-    
+    //Dialogue
+    public string initalDialogue;
     
 }
