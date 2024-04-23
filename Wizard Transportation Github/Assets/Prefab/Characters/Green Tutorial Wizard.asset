@@ -17,8 +17,8 @@ MonoBehaviour:
   magicLevel: 1
   adventurerRank: E
   height: 
-  age: 25
-  characterClass: Warrior
+  age: 305
+  characterClass: Wizard
   isAllowed: 1
   isRobot: 0
   destination: City
@@ -30,4 +30,5 @@ MonoBehaviour:
   isBribing: 0
   bribeAmount: 0
   denialReason: 
-  initalDialogue: Hello! I wish you luck on hunting robots lol
+  initalDialogue: Hello! I heard about your robot problem. Hopefully it doesn't affect
+    business to much, friend.

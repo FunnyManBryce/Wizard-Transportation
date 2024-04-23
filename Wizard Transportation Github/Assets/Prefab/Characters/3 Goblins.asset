@@ -19,7 +19,7 @@ MonoBehaviour:
   height: 
   age: 25
   characterClass: Warrior
-  isAllowed: 1
+  isAllowed: 0
   isRobot: 0
   destination: City
   hasBag: 0
@@ -31,4 +31,5 @@ MonoBehaviour:
   isBribing: 0
   bribeAmount: 0
   denialReason: 
-  initalDialogue: 
+  initalDialogue: Hello. We, er... I would really like to use your transportation
+    thingy

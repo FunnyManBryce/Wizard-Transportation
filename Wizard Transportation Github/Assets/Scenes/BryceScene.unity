@@ -177,16 +177,20 @@ MonoBehaviour:
   characters: []
   charPerDay: 5
   currentCharacter: {fileID: 0}
+  dialogueManager: {fileID: 567529992}
   gamePanel: {fileID: 730842969}
   outlibe: {fileID: 1737829580}
   nightPanel: {fileID: 864419796}
   currentVariables: {fileID: 0}
   popularity: 20
   gold: 100
+  Day: 1
   deskXStart: 0
   deskXEnd: 0
   deskYStart: 0
   deskYEnd: 0
+  goldDisplay: {fileID: 735503080}
+  dayDisplay: {fileID: 458903157}
   PopularityBar: {fileID: 75548031}
   timeManager: {fileID: 9950376}
 --- !u!114 &9950376
@@ -331,7 +335,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 92, y: 0}
+  m_AnchoredPosition: {x: 92, y: -3.5}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &75548030
@@ -1079,7 +1083,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 126.06028, w: -29.34159}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1533,7 +1537,7 @@ GameObject:
   - component: {fileID: 567529990}
   - component: {fileID: 567529992}
   m_Layer: 0
-  m_Name: Text Box
+  m_Name: Dialogue Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1620,6 +1624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 9950375}
+  dialogueToPlay: Now this is epic
   Dialogue: {fileID: 728632112}
 --- !u!1 &604577547
 GameObject:
@@ -2249,7 +2254,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 254, y: 200.1}
+  m_AnchoredPosition: {x: 264, y: 200.1}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &735503080
@@ -2335,7 +2340,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 123.88683, w: -32.60175}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

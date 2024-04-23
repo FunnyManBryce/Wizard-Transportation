@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+
 
 public class GameManager : MonoBehaviour
 {
@@ -8,24 +10,29 @@ public class GameManager : MonoBehaviour
     public List<GameObject> characters;
     public int charPerDay;
     public GameObject currentCharacter;
+    public DialogueManager dialogueManager;
     public GameObject gamePanel;
     public GameObject outlibe;
     public GameObject nightPanel;
     public CharVariables currentVariables;
     public int popularity = 70;
     public int gold = 100;
+    public int Day = 1;
     public float deskXStart, deskXEnd;
     public float deskYStart, deskYEnd;
 
+    public TMP_Text goldDisplay;
+    public TMP_Text dayDisplay;
     public PopBar PopularityBar;
     public TimeManager timeManager;
 
     private void Start()
     {
+        goldDisplay.text = "Gold: " + gold;
+        dayDisplay.text = "Day: " + Day;
         PopularityBar.SetPopularity(popularity);
         for(int i = 1; i <= charPerDay; i++)
         {
-            Debug.Log("balls");
             currentCharacter = possibleCharacters[Random.Range(0, possibleCharacters.Count)];
             characters.Add(currentCharacter);
             //possibleCharacters.Remove(currentCharacter);
@@ -33,6 +40,9 @@ public class GameManager : MonoBehaviour
         }
         currentCharacter = characters[0];
         currentCharacter.SetActive(true);
+        dialogueManager.dialogueToPlay = currentCharacter.GetComponent<CharacterDisplay>().display.initalDialogue;
+        dialogueManager.StartCoroutine("CharacterDialogue");
+
     }
     private void Update()
     {
@@ -52,6 +62,7 @@ public class GameManager : MonoBehaviour
         if(currentVariables.isAllowed == true)
         {
             gold = gold + currentVariables.goldReward;
+            goldDisplay.text = "Gold: " + gold;
             popularity = popularity + currentVariables.reputationReward;
             PopularityBar.SetPopularity(popularity);
         }
@@ -66,6 +77,8 @@ public class GameManager : MonoBehaviour
         currentCharacter.SetActive(false);
         currentCharacter = characters[0];
         currentCharacter.SetActive(true);
+        dialogueManager.dialogueToPlay = currentCharacter.GetComponent<CharacterDisplay>().display.initalDialogue;
+        dialogueManager.StartCoroutine("CharacterDialogue");
 
     }
     public void Deny()
@@ -87,6 +100,8 @@ public class GameManager : MonoBehaviour
         currentCharacter.SetActive(false);
         currentCharacter = characters[0];
         currentCharacter.SetActive(true);
+        dialogueManager.dialogueToPlay = currentCharacter.GetComponent<CharacterDisplay>().display.initalDialogue;
+        dialogueManager.StartCoroutine("CharacterDialogue");
 
     }
     public void EndDay()
@@ -98,14 +113,14 @@ public class GameManager : MonoBehaviour
     }
     public void StartDay()
     {
-        Debug.Log("cock");
+        Day++;
+        dayDisplay.text = "Day: " + Day;
         outlibe.SetActive(true);
         gamePanel.SetActive(true);
         nightPanel.SetActive(false);
         timeManager.timeScale = 10f;
         for (int i = 1; i <= charPerDay; i++)
         {
-            Debug.Log("balls");
             currentCharacter = possibleCharacters[Random.Range(0, possibleCharacters.Count)];
             characters.Add(currentCharacter);
             //possibleCharacters.Remove(currentCharacter);
@@ -113,6 +128,8 @@ public class GameManager : MonoBehaviour
         }
         currentCharacter = characters[0];
         currentCharacter.SetActive(true);
+        dialogueManager.dialogueToPlay = currentCharacter.GetComponent<CharacterDisplay>().display.initalDialogue;
+        dialogueManager.StartCoroutine("CharacterDialogue");
     }
     public void OpenBelongings()
     {
