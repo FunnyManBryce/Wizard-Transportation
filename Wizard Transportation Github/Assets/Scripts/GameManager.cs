@@ -116,6 +116,12 @@ public class GameManager : MonoBehaviour
     }
     public void OpenBelongings()
     {
+        currentVariables = currentCharacter.GetComponent<CharacterDisplay>().display;
 
+        foreach (GameObject belongings in currentVariables.belongings) 
+        {
+            Instantiate(belongings, new Vector3 (Random.Range(deskXStart, deskXEnd), Random.Range(deskYStart, deskYEnd), 0), Quaternion.identity);
+        }
+        
     }
 }
