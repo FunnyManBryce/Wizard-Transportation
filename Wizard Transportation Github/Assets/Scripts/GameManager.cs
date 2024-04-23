@@ -41,8 +41,8 @@ public class GameManager : MonoBehaviour
         currentCharacter = characters[0];
         currentCharacter.SetActive(true);
         dialogueManager.dialogueToPlay = currentCharacter.GetComponent<CharacterDisplay>().display.initalDialogue;
+        dialogueManager.StopCoroutine("CharacterDialogue");
         dialogueManager.StartCoroutine("CharacterDialogue");
-
     }
     private void Update()
     {
@@ -78,7 +78,9 @@ public class GameManager : MonoBehaviour
         currentCharacter = characters[0];
         currentCharacter.SetActive(true);
         dialogueManager.dialogueToPlay = currentCharacter.GetComponent<CharacterDisplay>().display.initalDialogue;
+        dialogueManager.StopCoroutine("CharacterDialogue");
         dialogueManager.StartCoroutine("CharacterDialogue");
+
 
     }
     public void Deny()
@@ -101,8 +103,8 @@ public class GameManager : MonoBehaviour
         currentCharacter = characters[0];
         currentCharacter.SetActive(true);
         dialogueManager.dialogueToPlay = currentCharacter.GetComponent<CharacterDisplay>().display.initalDialogue;
+        dialogueManager.StopCoroutine("CharacterDialogue");
         dialogueManager.StartCoroutine("CharacterDialogue");
-
     }
     public void EndDay()
     {
@@ -129,6 +131,7 @@ public class GameManager : MonoBehaviour
         currentCharacter = characters[0];
         currentCharacter.SetActive(true);
         dialogueManager.dialogueToPlay = currentCharacter.GetComponent<CharacterDisplay>().display.initalDialogue;
+        dialogueManager.StopCoroutine("CharacterDialogue");
         dialogueManager.StartCoroutine("CharacterDialogue");
     }
     public void OpenBelongings()

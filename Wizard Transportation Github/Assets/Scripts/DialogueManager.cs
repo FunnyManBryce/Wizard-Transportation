@@ -27,7 +27,7 @@ public class DialogueManager : MonoBehaviour
         for (int i = 0; i < dialogueToPlay.Length; i++)
         {
             Dialogue.text = Dialogue.text + dialogueToPlay[i];
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.075f);
         }
     }
 }
