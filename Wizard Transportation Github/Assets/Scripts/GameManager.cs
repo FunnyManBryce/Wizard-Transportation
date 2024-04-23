@@ -119,9 +119,15 @@ public class GameManager : MonoBehaviour
         currentVariables = currentCharacter.GetComponent<CharacterDisplay>().display;
 
         foreach (GameObject belongings in currentVariables.belongings) 
-        {
-            Instantiate(belongings, new Vector3 (Random.Range(deskXStart, deskXEnd), Random.Range(deskYStart, deskYEnd), 0), Quaternion.identity);
+        {            
+            RectTransform panelRectTransform = gamePanel.GetComponent<RectTransform>();
+
+            float xPos = Random.Range(Mathf.Max(panelRectTransform.rect.xMin, deskXStart), Mathf.Min(panelRectTransform.rect.xMax, deskXEnd));
+            float yPos = Random.Range(Mathf.Max(panelRectTransform.rect.yMin, deskYStart), Mathf.Min(panelRectTransform.rect.yMax, deskYEnd));
+
+            Vector3 worldPosition = panelRectTransform.TransformPoint(new Vector3(xPos, yPos, 0));
+
+            Instantiate(belongings, worldPosition, Quaternion.identity, gamePanel.transform);
         }
-        
     }
 }

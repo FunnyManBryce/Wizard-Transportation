@@ -3094,7 +3094,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -90, y: 75}
+  m_AnchoredPosition: {x: 350, y: -90}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1570927079
@@ -3651,10 +3651,10 @@ MonoBehaviour:
   currentVariables: {fileID: 0}
   popularity: 20
   gold: 100
-  deskXStart: -2.5
-  deskXEnd: 0
-  deskYStart: 2
-  deskYEnd: 0
+  deskXStart: -110
+  deskXEnd: 350
+  deskYStart: 100
+  deskYEnd: -90
   PopularityBar: {fileID: 1552717114}
   timeManager: {fileID: 1818754895}
 --- !u!114 &1818754895
