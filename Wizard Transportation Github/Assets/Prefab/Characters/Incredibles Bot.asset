@@ -26,7 +26,7 @@ MonoBehaviour:
   belongings: []
   goldReward: 0
   reputationReward: 10
-  reputationPenalty: 40
+  reputationPenalty: 50
   isBribing: 0
   bribeAmount: 0
   denialReason: 

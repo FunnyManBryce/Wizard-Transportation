@@ -85,7 +85,7 @@ public class GameManager : MonoBehaviour
         dialogueManager.dialogueToPlay = currentCharacter.GetComponent<CharacterDisplay>().display.initalDialogue;
         dialogueManager.StopCoroutine("CharacterDialogue");
         dialogueManager.StartCoroutine("CharacterDialogue");
-        if (popularity < 0)
+        if (popularity < 0 || gold < 0)
         {
             Lose();
         }
@@ -113,7 +113,7 @@ public class GameManager : MonoBehaviour
         dialogueManager.dialogueToPlay = currentCharacter.GetComponent<CharacterDisplay>().display.initalDialogue;
         dialogueManager.StopCoroutine("CharacterDialogue");
         dialogueManager.StartCoroutine("CharacterDialogue");
-        if (popularity < 0)
+        if (popularity < 0 || gold < 0)
         {
             Lose();
         }
@@ -131,6 +131,10 @@ public class GameManager : MonoBehaviour
         gold = gold - 5;
         goldDisplay.text = "Gold: " + gold;
         dayDisplay.text = "Day: " + Day;
+        if (popularity < 0 || gold < 0)
+        {
+            Lose();
+        }
         outlibe.SetActive(true);
         gamePanel.SetActive(true);
         nightPanel.SetActive(false);
