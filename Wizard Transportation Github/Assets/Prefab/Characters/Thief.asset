@@ -10,30 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e011aea718c5ebb46846178568346d2f, type: 3}
-  m_Name: Guy 7
+  m_Name: Thief
   m_EditorClassIdentifier: 
   name: Guy 1
   species: Human
   magicLevel: 1
   adventurerRank: E
+  height: 
   age: 25
   characterClass: Warrior
-  isAllowed: 1
+  isAllowed: 0
   isRobot: 0
   destination: City
   hasBag: 0
   belongings: []
-  hasID: 1
-  IDName: Guy 1
-  IDSpecies: Human
-  IDAge: 25
-  IDClass: Warrior
-  hasTicket: 1
-  ticketExpirationDate: 
-  ticketName: Guy 1
-  ticketDestination: City
   goldReward: 2
   reputationReward: 5
+  reputationPenalty: 0
   isBribing: 0
   bribeAmount: 0
   denialReason: 
+  initalDialogue: 
