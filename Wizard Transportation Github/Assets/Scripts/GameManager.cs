@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 
 public class GameManager : MonoBehaviour
@@ -14,6 +15,7 @@ public class GameManager : MonoBehaviour
     public GameObject gamePanel;
     public GameObject outlibe;
     public GameObject nightPanel;
+    public GameObject loseScreen;
     public CharVariables currentVariables;
     public int popularity = 70;
     public int gold = 100;
@@ -80,8 +82,10 @@ public class GameManager : MonoBehaviour
         dialogueManager.dialogueToPlay = currentCharacter.GetComponent<CharacterDisplay>().display.initalDialogue;
         dialogueManager.StopCoroutine("CharacterDialogue");
         dialogueManager.StartCoroutine("CharacterDialogue");
-
-
+        if (popularity < 0)
+        {
+            Lose();
+        }
     }
     public void Deny()
     {
@@ -105,6 +109,10 @@ public class GameManager : MonoBehaviour
         dialogueManager.dialogueToPlay = currentCharacter.GetComponent<CharacterDisplay>().display.initalDialogue;
         dialogueManager.StopCoroutine("CharacterDialogue");
         dialogueManager.StartCoroutine("CharacterDialogue");
+        if (popularity < 0)
+        {
+            Lose();
+        }
     }
     public void EndDay()
     {
@@ -149,5 +157,14 @@ public class GameManager : MonoBehaviour
 
             Instantiate(belongings, worldPosition, Quaternion.identity, gamePanel.transform);
         }
+    }
+    public void Lose()
+    {
+        loseScreen.SetActive(true);
+    }
+    public void Restart()
+    {
+        SceneManager.LoadScene("BryceScene");
+        loseScreen.SetActive(false);
     }
 }
