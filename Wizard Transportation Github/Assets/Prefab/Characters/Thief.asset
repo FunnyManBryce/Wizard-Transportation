@@ -12,22 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e011aea718c5ebb46846178568346d2f, type: 3}
   m_Name: Thief
   m_EditorClassIdentifier: 
-  name: Guy 1
+  name: Thief
   species: Human
   magicLevel: 1
   adventurerRank: E
   height: 
   age: 25
-  characterClass: Warrior
+  characterClass: Rogue
   isAllowed: 0
   isRobot: 0
   destination: City
   hasBag: 0
   belongings: []
-  goldReward: 2
+  goldReward: 25
   reputationReward: 5
-  reputationPenalty: 0
+  reputationPenalty: 15
   isBribing: 0
   bribeAmount: 0
   denialReason: 
-  initalDialogue: 
+  initalDialogue: I'm totally not here to rob you...

@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     public GameObject loseScreen;
     public CharVariables currentVariables;
     public int popularity = 70;
-    public int gold = 100;
+    public int gold = 25;
     public int Day = 1;
     public float deskXStart, deskXEnd;
     public float deskYStart, deskYEnd;
@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
         {
             currentCharacter = possibleCharacters[Random.Range(0, possibleCharacters.Count)];
             characters.Add(currentCharacter);
-            //possibleCharacters.Remove(currentCharacter);
+            possibleCharacters.Remove(currentCharacter);
             //currentCharacter.transform.position = new Vector3(-6.5f, -1.5f, 0);
         }
         currentCharacter = characters[0];
@@ -70,9 +70,12 @@ public class GameManager : MonoBehaviour
         }
         else
         {
+            gold = gold - currentVariables.goldReward;
+            goldDisplay.text = "Gold: " + gold;
             popularity = popularity - currentVariables.reputationPenalty;
             PopularityBar.SetPopularity(popularity);
         }
+        possibleCharacters.Add(currentCharacter);
         characters.Remove(currentCharacter);
         //Destroy(currentCharacter);
         //currentCharacter.transform.position = new Vector3(-30, -1.5f, 0);
@@ -100,6 +103,7 @@ public class GameManager : MonoBehaviour
             popularity = popularity - currentVariables.reputationPenalty;
             PopularityBar.SetPopularity(popularity);
         }
+        possibleCharacters.Add(currentCharacter);
         characters.Remove(currentCharacter);
         //Destroy(currentCharacter);
         //currentCharacter.transform.position = new Vector3(-30, -1.5f, 0);
@@ -124,6 +128,8 @@ public class GameManager : MonoBehaviour
     public void StartDay()
     {
         Day++;
+        gold = gold - 5;
+        goldDisplay.text = "Gold: " + gold;
         dayDisplay.text = "Day: " + Day;
         outlibe.SetActive(true);
         gamePanel.SetActive(true);
@@ -133,8 +139,7 @@ public class GameManager : MonoBehaviour
         {
             currentCharacter = possibleCharacters[Random.Range(0, possibleCharacters.Count)];
             characters.Add(currentCharacter);
-            //possibleCharacters.Remove(currentCharacter);
-            //currentCharacter.transform.position = new Vector3(-6.5f, -1.5f, 0);
+            possibleCharacters.Remove(currentCharacter);
         }
         currentCharacter = characters[0];
         currentCharacter.SetActive(true);

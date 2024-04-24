@@ -30,5 +30,4 @@ MonoBehaviour:
   isBribing: 0
   bribeAmount: 0
   denialReason: 
-  initalDialogue: Hello! I heard about your robot problem. Hopefully it doesn't affect
-    business too much, friend.
+  initalDialogue: How's the robot hunting going? I wish you luck, friend.

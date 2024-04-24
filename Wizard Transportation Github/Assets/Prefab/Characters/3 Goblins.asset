@@ -25,7 +25,7 @@ MonoBehaviour:
   hasBag: 0
   belongings:
   - {fileID: 5607916073220419663, guid: 2e039d39a14652244acbc95f32a992ba, type: 3}
-  goldReward: 2
+  goldReward: 0
   reputationReward: 5
   reputationPenalty: 20
   isBribing: 0

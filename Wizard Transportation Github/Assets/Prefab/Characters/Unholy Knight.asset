@@ -24,7 +24,7 @@ MonoBehaviour:
   destination: City
   hasBag: 0
   belongings: []
-  goldReward: 2
+  goldReward: 0
   reputationReward: 5
   reputationPenalty: 25
   isBribing: 0

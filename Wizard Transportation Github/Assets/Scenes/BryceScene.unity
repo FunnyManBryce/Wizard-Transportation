@@ -170,9 +170,10 @@ MonoBehaviour:
   gamePanel: {fileID: 730842969}
   outlibe: {fileID: 1737829580}
   nightPanel: {fileID: 864419796}
+  loseScreen: {fileID: 0}
   currentVariables: {fileID: 0}
   popularity: 20
-  gold: 100
+  gold: 25
   Day: 1
   deskXStart: 0
   deskXEnd: 0
