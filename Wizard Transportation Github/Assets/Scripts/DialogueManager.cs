@@ -12,13 +12,13 @@ public class DialogueManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //StartCoroutine("CharacterDialogue");
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        //dialogueToPlay = gameManager.currentCharacter.GetComponent<CharacterDisplay>().display.initalDialogue;
+
     }
 
     public IEnumerator CharacterDialogue()
