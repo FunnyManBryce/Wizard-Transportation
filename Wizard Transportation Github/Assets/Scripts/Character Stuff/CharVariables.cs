@@ -31,5 +31,11 @@ public class CharVariables : ScriptableObject
 
     //Dialogue
     public string initalDialogue;
-    
+    public List<string> genDialogue;
+
+    //Generations
+    public bool Generation;
+    public int genCount = 0;
+    public Sprite currentImage;
+    public List<Sprite> genImages;
 }

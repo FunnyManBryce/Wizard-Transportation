@@ -30,6 +30,13 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        for (int i = 0; i <= possibleCharacters.Count - 1; i++) //REALLY important for generation system to reset
+        {
+            currentCharacter = possibleCharacters[i];
+            currentVariables = currentCharacter.GetComponent<CharacterDisplay>().display;
+            currentVariables.genCount = 0;
+            Debug.Log(i);
+        }
         goldDisplay.text = "Gold: " + gold;
         dayDisplay.text = "Day: " + Day;
         PopularityBar.SetPopularity(popularity);
@@ -42,7 +49,15 @@ public class GameManager : MonoBehaviour
         }
         currentCharacter = characters[0];
         currentCharacter.SetActive(true);
-        dialogueManager.dialogueToPlay = currentCharacter.GetComponent<CharacterDisplay>().display.initalDialogue;
+        currentVariables = currentCharacter.GetComponent<CharacterDisplay>().display;
+        if (currentVariables.Generation == true)
+        {
+            dialogueManager.dialogueToPlay = currentVariables.genDialogue[currentVariables.genCount];
+        }
+        else
+        {
+            dialogueManager.dialogueToPlay = currentVariables.initalDialogue;
+        }
         dialogueManager.StopCoroutine("CharacterDialogue");
         dialogueManager.StartCoroutine("CharacterDialogue");
     }
@@ -82,7 +97,15 @@ public class GameManager : MonoBehaviour
         currentCharacter.SetActive(false);
         currentCharacter = characters[0];
         currentCharacter.SetActive(true);
-        dialogueManager.dialogueToPlay = currentCharacter.GetComponent<CharacterDisplay>().display.initalDialogue;
+        currentVariables = currentCharacter.GetComponent<CharacterDisplay>().display;
+        if (currentVariables.Generation == true)
+        {
+            dialogueManager.dialogueToPlay = currentVariables.genDialogue[currentVariables.genCount];
+        }
+        else
+        {
+            dialogueManager.dialogueToPlay = currentVariables.initalDialogue;
+        }
         dialogueManager.StopCoroutine("CharacterDialogue");
         dialogueManager.StartCoroutine("CharacterDialogue");
         if (popularity < 0 || gold < 0)
@@ -103,6 +126,15 @@ public class GameManager : MonoBehaviour
             popularity = popularity - currentVariables.reputationPenalty;
             PopularityBar.SetPopularity(popularity);
         }
+        if (currentVariables.Generation == true && currentVariables.genCount < currentVariables.genImages.Count - 1)
+        {
+            Debug.Log("GENERATION");
+            currentVariables.genCount++;
+            //currentVariables.currentImage = currentVariables.genImages[0];
+            //currentVariables.genImages.Remove(currentVariables.currentImage);
+            currentVariables.currentImage = currentVariables.genImages[currentVariables.genCount];
+            currentCharacter.GetComponent<SpriteRenderer>().sprite = currentVariables.currentImage;
+        }
         possibleCharacters.Add(currentCharacter);
         characters.Remove(currentCharacter);
         //Destroy(currentCharacter);
@@ -110,7 +142,14 @@ public class GameManager : MonoBehaviour
         currentCharacter.SetActive(false);
         currentCharacter = characters[0];
         currentCharacter.SetActive(true);
-        dialogueManager.dialogueToPlay = currentCharacter.GetComponent<CharacterDisplay>().display.initalDialogue;
+        currentVariables = currentCharacter.GetComponent<CharacterDisplay>().display;
+        if (currentVariables.Generation == true)
+        {
+            dialogueManager.dialogueToPlay = currentVariables.genDialogue[currentVariables.genCount];
+        } else
+        {
+            dialogueManager.dialogueToPlay = currentVariables.initalDialogue;
+        }
         dialogueManager.StopCoroutine("CharacterDialogue");
         dialogueManager.StartCoroutine("CharacterDialogue");
         if (popularity < 0 || gold < 0)
@@ -164,7 +203,15 @@ public class GameManager : MonoBehaviour
         }
         currentCharacter = characters[0];
         currentCharacter.SetActive(true);
-        dialogueManager.dialogueToPlay = currentCharacter.GetComponent<CharacterDisplay>().display.initalDialogue;
+        currentVariables = currentCharacter.GetComponent<CharacterDisplay>().display;
+        if (currentVariables.Generation == true)
+        {
+            dialogueManager.dialogueToPlay = currentVariables.genDialogue[currentVariables.genCount];
+        }
+        else
+        {
+            dialogueManager.dialogueToPlay = currentVariables.initalDialogue;
+        }
         dialogueManager.StopCoroutine("CharacterDialogue");
         dialogueManager.StartCoroutine("CharacterDialogue");
     }
