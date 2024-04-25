@@ -31,3 +31,14 @@ MonoBehaviour:
   bribeAmount: 0
   denialReason: 
   initalDialogue: I'm totally not here to rob you...
+  genDialogue:
+  - I'm totally not here to rob you...
+  - Would you let me rob you if I said pretty please?
+  - Look man, I really need some money...
+  Generation: 1
+  genCount: 0
+  currentImage: {fileID: 0}
+  genImages:
+  - {fileID: 21300000, guid: f9f2f9ca679cea24d8ec7970c024456b, type: 3}
+  - {fileID: 21300000, guid: f9f2f9ca679cea24d8ec7970c024456b, type: 3}
+  - {fileID: 21300000, guid: f9f2f9ca679cea24d8ec7970c024456b, type: 3}

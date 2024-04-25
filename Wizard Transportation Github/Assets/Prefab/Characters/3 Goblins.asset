@@ -35,9 +35,11 @@ MonoBehaviour:
   genDialogue:
   - Uh, could you let us in... pllleeeaaaaassssseeee?
   - Hello. We, er... I would really like to use your transportation thingy
+  - Cmon, you won't even notice us going in, I swear!
   Generation: 1
   genCount: 1
   currentImage: {fileID: 21300000, guid: 15a9c965a8f6c2045a2d69c916506406, type: 3}
   genImages:
   - {fileID: 21300000, guid: e3d71110c2635814b9419ea6af69d685, type: 3}
+  - {fileID: 21300000, guid: 15a9c965a8f6c2045a2d69c916506406, type: 3}
   - {fileID: 21300000, guid: 15a9c965a8f6c2045a2d69c916506406, type: 3}
