@@ -126,7 +126,7 @@ public class GameManager : MonoBehaviour
             currentCharacter = characters[0];
             possibleCharacters.Add(currentCharacter);
             characters.Remove(currentCharacter);
-            popularity = popularity - 10;
+            popularity = popularity - 20;
             gold = gold - 3;
             goldDisplay.text = "Gold: " + gold;
             PopularityBar.SetPopularity(popularity);

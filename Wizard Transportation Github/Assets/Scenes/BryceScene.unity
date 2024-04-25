@@ -163,6 +163,9 @@ MonoBehaviour:
   - {fileID: 1116178085}
   - {fileID: 193080733}
   - {fileID: 1817696952}
+  - {fileID: 89019274}
+  - {fileID: 341439641}
+  - {fileID: 2133077558}
   characters: []
   charPerDay: 4
   currentCharacter: {fileID: 0}
@@ -420,6 +423,11 @@ MonoBehaviour:
     m_NumColorKeys: 6
     m_NumAlphaKeys: 2
   fill: {fileID: 1716326557}
+--- !u!1 &89019274 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1490450148598525469, guid: 078aa97a52c4b654bbbb066bf0d7e185, type: 3}
+  m_PrefabInstance: {fileID: 1662815690}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &160392213
 GameObject:
   m_ObjectHideFlags: 0
@@ -914,7 +922,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1490450148598525469, guid: 99a371a5c3764534b8ad352a2bfa548a, type: 3}
       propertyPath: m_Name
-      value: Guy 2
+      value: Holy Knight
       objectReference: {fileID: 0}
     - target: {fileID: 1490450148598525469, guid: 99a371a5c3764534b8ad352a2bfa548a, type: 3}
       propertyPath: m_IsActive
@@ -965,6 +973,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99a371a5c3764534b8ad352a2bfa548a, type: 3}
+--- !u!1 &341439641 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1490450148598525469, guid: 2f017faf5e2205b41b491a88065ca553, type: 3}
+  m_PrefabInstance: {fileID: 2119755978}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &378923534
 GameObject:
   m_ObjectHideFlags: 0
@@ -1861,7 +1874,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1490450148598525469, guid: 4f155372e7b4d164ca3defc4a669f7e4, type: 3}
       propertyPath: m_Name
-      value: Robot 1
+      value: Dumb Robot
       objectReference: {fileID: 0}
     - target: {fileID: 1490450148598525469, guid: 4f155372e7b4d164ca3defc4a669f7e4, type: 3}
       propertyPath: m_IsActive
@@ -3023,7 +3036,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1490450148598525469, guid: c806a23f284304d49846acb6149cd00a, type: 3}
       propertyPath: m_Name
-      value: Guy 8
+      value: Halfling Male
       objectReference: {fileID: 0}
     - target: {fileID: 1490450148598525469, guid: c806a23f284304d49846acb6149cd00a, type: 3}
       propertyPath: m_IsActive
@@ -3160,7 +3173,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1490450148598525469, guid: 9e892e48143bcc74f9c76527ea4755e4, type: 3}
       propertyPath: m_Name
-      value: Guy 4
+      value: Tall Goblin
       objectReference: {fileID: 0}
     - target: {fileID: 1490450148598525469, guid: 9e892e48143bcc74f9c76527ea4755e4, type: 3}
       propertyPath: m_IsActive
@@ -3810,7 +3823,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1490450148598525469, guid: 47d70a71a9624a944b3ac50dab7ffd14, type: 3}
       propertyPath: m_Name
-      value: Robot 2
+      value: Cluastexador Faux
       objectReference: {fileID: 0}
     - target: {fileID: 1490450148598525469, guid: 47d70a71a9624a944b3ac50dab7ffd14, type: 3}
       propertyPath: m_IsActive
@@ -3818,11 +3831,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7290402163415209088, guid: 47d70a71a9624a944b3ac50dab7ffd14, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.5
+      value: -6.68
       objectReference: {fileID: 0}
     - target: {fileID: 7290402163415209088, guid: 47d70a71a9624a944b3ac50dab7ffd14, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.02
       objectReference: {fileID: 0}
     - target: {fileID: 7290402163415209088, guid: 47d70a71a9624a944b3ac50dab7ffd14, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4259,7 +4272,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1490450148598525469, guid: 34b95025baae11f46b947fbf8cf9a6d4, type: 3}
       propertyPath: m_Name
-      value: Guy 5
+      value: 3 Goblins
       objectReference: {fileID: 0}
     - target: {fileID: 1490450148598525469, guid: 34b95025baae11f46b947fbf8cf9a6d4, type: 3}
       propertyPath: m_IsActive
@@ -4320,7 +4333,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1490450148598525469, guid: 078aa97a52c4b654bbbb066bf0d7e185, type: 3}
       propertyPath: m_Name
-      value: Guy 10
+      value: Female Halfling
       objectReference: {fileID: 0}
     - target: {fileID: 1490450148598525469, guid: 078aa97a52c4b654bbbb066bf0d7e185, type: 3}
       propertyPath: m_IsActive
@@ -4328,11 +4341,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7290402163415209088, guid: 078aa97a52c4b654bbbb066bf0d7e185, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.5
+      value: -6.06
       objectReference: {fileID: 0}
     - target: {fileID: 7290402163415209088, guid: 078aa97a52c4b654bbbb066bf0d7e185, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.02
       objectReference: {fileID: 0}
     - target: {fileID: 7290402163415209088, guid: 078aa97a52c4b654bbbb066bf0d7e185, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4381,7 +4394,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1490450148598525469, guid: 76067b4cb40159843a862a3e3eb456cf, type: 3}
       propertyPath: m_Name
-      value: Guy 6
+      value: Tutorial Wizard
       objectReference: {fileID: 0}
     - target: {fileID: 1490450148598525469, guid: 76067b4cb40159843a862a3e3eb456cf, type: 3}
       propertyPath: m_IsActive
@@ -4393,11 +4406,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7290402163415209088, guid: 76067b4cb40159843a862a3e3eb456cf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.5
+      value: -6.39
       objectReference: {fileID: 0}
     - target: {fileID: 7290402163415209088, guid: 76067b4cb40159843a862a3e3eb456cf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: 7290402163415209088, guid: 76067b4cb40159843a862a3e3eb456cf, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4446,7 +4459,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1490450148598525469, guid: 2b312699636008f48a8867ad30d0629f, type: 3}
       propertyPath: m_Name
-      value: Guy 7
+      value: Thief
       objectReference: {fileID: 0}
     - target: {fileID: 1490450148598525469, guid: 2b312699636008f48a8867ad30d0629f, type: 3}
       propertyPath: m_IsActive
@@ -4922,7 +4935,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1490450148598525469, guid: fec9d768325d7a44485aeec82c3bca88, type: 3}
       propertyPath: m_Name
-      value: Guy 1
+      value: Noble
       objectReference: {fileID: 0}
     - target: {fileID: 1490450148598525469, guid: fec9d768325d7a44485aeec82c3bca88, type: 3}
       propertyPath: m_IsActive
@@ -5044,7 +5057,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1490450148598525469, guid: 16deb7fa60e196540bc25d586ffe1857, type: 3}
       propertyPath: m_Name
-      value: Guy 3
+      value: Unholy Knight
       objectReference: {fileID: 0}
     - target: {fileID: 1490450148598525469, guid: 16deb7fa60e196540bc25d586ffe1857, type: 3}
       propertyPath: m_IsActive
@@ -5103,9 +5116,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 517464935558544433, guid: 2f017faf5e2205b41b491a88065ca553, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 1490450148598525469, guid: 2f017faf5e2205b41b491a88065ca553, type: 3}
       propertyPath: m_Name
-      value: Guy 9
+      value: Evil Wizard
       objectReference: {fileID: 0}
     - target: {fileID: 1490450148598525469, guid: 2f017faf5e2205b41b491a88065ca553, type: 3}
       propertyPath: m_IsActive
@@ -5113,11 +5130,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7290402163415209088, guid: 2f017faf5e2205b41b491a88065ca553, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.5
+      value: -6.22
       objectReference: {fileID: 0}
     - target: {fileID: 7290402163415209088, guid: 2f017faf5e2205b41b491a88065ca553, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 7290402163415209088, guid: 2f017faf5e2205b41b491a88065ca553, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5290,6 +5307,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2131429916}
   m_CullTransparentMesh: 1
+--- !u!1 &2133077558 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1490450148598525469, guid: 47d70a71a9624a944b3ac50dab7ffd14, type: 3}
+  m_PrefabInstance: {fileID: 1293783533}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
