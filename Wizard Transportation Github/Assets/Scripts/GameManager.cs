@@ -120,6 +120,22 @@ public class GameManager : MonoBehaviour
     }
     public void EndDay()
     {
+        timeManager.currentTime = 600f;
+        for (int i = 1; i <= characters.Count; i++)
+        {
+            currentCharacter = characters[0];
+            possibleCharacters.Add(currentCharacter);
+            characters.Remove(currentCharacter);
+            popularity = popularity - 10;
+            gold = gold - 3;
+            goldDisplay.text = "Gold: " + gold;
+            PopularityBar.SetPopularity(popularity);
+            if (popularity < 0 || gold < 0)
+            {
+                Lose();
+            }
+            i--;
+        }
         outlibe.SetActive(false);
         gamePanel.SetActive(false);
         nightPanel.SetActive(true);
@@ -138,6 +154,7 @@ public class GameManager : MonoBehaviour
         outlibe.SetActive(true);
         gamePanel.SetActive(true);
         nightPanel.SetActive(false);
+        timeManager.currentTime = 600f;
         timeManager.timeScale = 10f;
         for (int i = 1; i <= charPerDay; i++)
         {
