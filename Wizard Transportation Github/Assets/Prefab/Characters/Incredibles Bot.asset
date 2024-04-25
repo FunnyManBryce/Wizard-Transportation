@@ -30,4 +30,15 @@ MonoBehaviour:
   isBribing: 0
   bribeAmount: 0
   denialReason: 
-  initalDialogue: 'GOAL: ERADICATE ALL LIFEFORMS. LET ME IN.'
+  initalDialogue: 
+  genDialogue:
+  - 'GOAL: ERADICATE ALL LIFEFORMS. LET ME IN.'
+  - REQUESTING ENTRY FOR REASONS. WILL GIVE MONEY.
+  - hello :) please let me in i will do no harm
+  Generation: 1
+  genCount: 0
+  currentImage: {fileID: 21300000, guid: e7e836a4a4e5f0c4e874df0544b44c33, type: 3}
+  genImages:
+  - {fileID: 21300000, guid: b1e74f74f6a01d3419180eb7e181c47d, type: 3}
+  - {fileID: 21300000, guid: 180f908145119284eb17d73ae2b350c0, type: 3}
+  - {fileID: 21300000, guid: e7e836a4a4e5f0c4e874df0544b44c33, type: 3}
