@@ -75,6 +75,7 @@ public class GameManager : MonoBehaviour
     }
     public void Accept()
     {
+        DestroyBelongings();
         currentVariables = currentCharacter.GetComponent<CharacterDisplay>().display;
         if(currentVariables.isAllowed == true)
         {
@@ -115,6 +116,7 @@ public class GameManager : MonoBehaviour
     }
     public void Deny()
     {
+        DestroyBelongings();
         currentVariables = currentCharacter.GetComponent<CharacterDisplay>().display;
         if (currentVariables.isAllowed == false)
         {
@@ -239,5 +241,14 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("BryceScene");
         loseScreen.SetActive(false);
+    }
+    private void DestroyBelongings()
+    {
+        GameObject[] belongings = GameObject.FindGameObjectsWithTag("Belongings");
+
+        foreach (GameObject belonging in belongings)
+        {
+            Destroy(belonging);
+        }
     }
 }
