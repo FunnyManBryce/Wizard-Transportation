@@ -37,7 +37,7 @@ MonoBehaviour:
   - You've made a dangerous enemy. Let me in NOW!
   - 'Ok, I give up... '
   Generation: 1
-  genCount: 2
+  genCount: 0
   currentImage: {fileID: 21300000, guid: 385180823534a1442a028ea4fae72e4e, type: 3}
   genImages:
   - {fileID: 21300000, guid: 385180823534a1442a028ea4fae72e4e, type: 3}

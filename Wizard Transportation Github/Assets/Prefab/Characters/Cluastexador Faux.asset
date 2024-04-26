@@ -31,3 +31,8 @@ MonoBehaviour:
   bribeAmount: 0
   denialReason: 
   initalDialogue: Hello. I am on official government business. Please let me pass.
+  genDialogue: []
+  Generation: 0
+  genCount: 0
+  currentImage: {fileID: 0}
+  genImages: []
