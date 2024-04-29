@@ -159,6 +159,48 @@ public class GameManager : MonoBehaviour
             Lose();
         }
     }
+    public void Kill()
+    {
+        DestroyBelongings();
+        currentVariables = currentCharacter.GetComponent<CharacterDisplay>().display;
+        if (currentVariables.isRobot == true)
+        {
+            popularity = popularity + (currentVariables.reputationReward * 3);
+            gold = gold + 10;
+            goldDisplay.text = "Gold: " + gold;
+            PopularityBar.SetPopularity(popularity);
+        }
+        else if (currentVariables.isAllowed == false)
+        {
+            popularity = popularity - (currentVariables.reputationPenalty + 15);
+            PopularityBar.SetPopularity(popularity);
+        }
+        else if (currentVariables.isAllowed == true)
+        {
+            popularity = popularity - (currentVariables.reputationPenalty + 30);
+            PopularityBar.SetPopularity(popularity);
+        }
+        characters.Remove(currentCharacter);
+        //Destroy(currentCharacter);
+        currentCharacter.SetActive(false);
+        currentCharacter = characters[0];
+        currentCharacter.SetActive(true);
+        currentVariables = currentCharacter.GetComponent<CharacterDisplay>().display;
+        if (currentVariables.Generation == true)
+        {
+            dialogueManager.dialogueToPlay = currentVariables.genDialogue[currentVariables.genCount];
+        }
+        else
+        {
+            dialogueManager.dialogueToPlay = currentVariables.initalDialogue;
+        }
+        dialogueManager.StopCoroutine("CharacterDialogue");
+        dialogueManager.StartCoroutine("CharacterDialogue");
+        if (popularity < 0 || gold < 0)
+        {
+            Lose();
+        }
+    }
     public void EndDay()
     {
         timeManager.currentTime = 600f;

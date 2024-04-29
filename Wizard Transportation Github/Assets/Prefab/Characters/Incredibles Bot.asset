@@ -25,7 +25,7 @@ MonoBehaviour:
   hasBag: 0
   belongings: []
   goldReward: 0
-  reputationReward: 10
+  reputationReward: 15
   reputationPenalty: 50
   isBribing: 0
   bribeAmount: 0
