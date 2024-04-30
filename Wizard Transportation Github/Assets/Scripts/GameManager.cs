@@ -163,7 +163,22 @@ public class GameManager : MonoBehaviour
     {
         DestroyBelongings();
         currentVariables = currentCharacter.GetComponent<CharacterDisplay>().display;
-        if (currentVariables.isRobot == true)
+
+        if (currentVariables.isRobot == true && currentVariables.Generation == true && currentVariables.genCount < currentVariables.genImages.Count - 1) 
+        {
+            Debug.Log("GENERATION");
+            currentVariables.genCount++;
+            //currentVariables.currentImage = currentVariables.genImages[0];
+            //currentVariables.genImages.Remove(currentVariables.currentImage);
+            currentVariables.currentImage = currentVariables.genImages[currentVariables.genCount];
+            currentCharacter.GetComponent<SpriteRenderer>().sprite = currentVariables.currentImage;
+            popularity = popularity + (currentVariables.reputationReward * 2);
+            gold = gold + 3;
+            goldDisplay.text = "Gold: " + gold;
+            PopularityBar.SetPopularity(popularity);
+            possibleCharacters.Add(currentCharacter);
+        }
+        else if (currentVariables.isRobot == true)
         {
             popularity = popularity + (currentVariables.reputationReward * 3);
             gold = gold + 10;
