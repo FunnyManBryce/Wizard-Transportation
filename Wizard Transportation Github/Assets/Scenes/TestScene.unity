@@ -928,7 +928,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 92, y: -3.5}
+  m_AnchoredPosition: {x: 92, y: -0.08337402}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &442337307
@@ -3250,7 +3250,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -99, y: 77}
+  m_AnchoredPosition: {x: -105, y: 76}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.49999997, y: 0.5}
 --- !u!114 &1570927079
@@ -4699,10 +4699,10 @@ MonoBehaviour:
   popularity: 20
   gold: 25
   Day: 1
-  deskXStart: 0
-  deskXEnd: 0
-  deskYStart: 0
-  deskYEnd: 0
+  deskXStart: -70
+  deskXEnd: 250
+  deskYStart: 50
+  deskYEnd: -90
   goldDisplay: {fileID: 270264833}
   dayDisplay: {fileID: 946944214}
   PopularityBar: {fileID: 442337305}
