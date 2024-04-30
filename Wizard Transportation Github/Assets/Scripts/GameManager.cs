@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
     public int Day = 1;
     public float deskXStart, deskXEnd;
     public float deskYStart, deskYEnd;
+    private bool isDragging = false;
+    private Vector3 offset;
 
     public TMP_Text goldDisplay;
     public TMP_Text dayDisplay;
