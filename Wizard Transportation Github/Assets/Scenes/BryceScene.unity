@@ -352,7 +352,7 @@ MonoBehaviour:
   - {fileID: 341439641}
   - {fileID: 2133077558}
   characters: []
-  charPerDay: 4
+  charPerDay: 5
   currentCharacter: {fileID: 0}
   dialogueManager: {fileID: 567529992}
   gamePanel: {fileID: 730842969}
@@ -360,7 +360,7 @@ MonoBehaviour:
   nightPanel: {fileID: 864419796}
   loseScreen: {fileID: 1950286393}
   currentVariables: {fileID: 0}
-  popularity: 20
+  popularity: 50
   gold: 25
   Day: 1
   deskXStart: 0
