@@ -74,6 +74,7 @@ public class GameManager : MonoBehaviour
             popularity = 100;
             PopularityBar.SetPopularity(popularity);
         }
+
     }
     public void Accept()
     {
