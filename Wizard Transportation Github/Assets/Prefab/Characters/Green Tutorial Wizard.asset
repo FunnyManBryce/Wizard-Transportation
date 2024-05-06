@@ -35,7 +35,7 @@ MonoBehaviour:
   denialReason: 
   initalDialogue: How's the robot hunting going? I wish you luck, friend.
   genDialogue: []
-  belongingDialouge: 
+  belongingDialouge: I should have everything ready!
   clearDialogue: adsfad
   kickDialogue: dasda
   killDialogue: dadf

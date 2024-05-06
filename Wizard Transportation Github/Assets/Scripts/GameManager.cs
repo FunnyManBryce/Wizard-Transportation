@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     public float deskYStart, deskYEnd;
     private bool isDragging = false;
     public bool dialoguePlaying;
+    public bool belongingExamined;
     private Vector3 offset;
     public TMP_Text goldDisplay;
     public TMP_Text dayDisplay;
@@ -86,7 +87,6 @@ public class GameManager : MonoBehaviour
     public IEnumerator AcceptCoroutine()
     {
         dialoguePlaying = true;
-        DestroyBelongings();
         dialogueManager.finished = false;
         currentVariables = currentCharacter.GetComponent<CharacterDisplay>().display;
         dialogueManager.dialogueToPlay = currentVariables.clearDialogue;
@@ -95,6 +95,8 @@ public class GameManager : MonoBehaviour
         yield return new WaitUntil(() => dialogueManager.finished == true);
         yield return new WaitForSeconds(0.5f);
         dialogueManager.finished = false;
+        DestroyBelongings();
+        belongingExamined = false;
         if (currentVariables.isAllowed == true)
         {
             gold = gold + currentVariables.goldReward;
@@ -143,7 +145,6 @@ public class GameManager : MonoBehaviour
     public IEnumerator DenyCoroutine()
     {
         dialoguePlaying = true;
-        DestroyBelongings();
         dialogueManager.finished = false;
         currentVariables = currentCharacter.GetComponent<CharacterDisplay>().display;
         dialogueManager.dialogueToPlay = currentVariables.kickDialogue;
@@ -151,6 +152,8 @@ public class GameManager : MonoBehaviour
         dialogueManager.StartCoroutine("CharacterDialogue");
         yield return new WaitUntil(() => dialogueManager.finished == true);
         yield return new WaitForSeconds(0.5f);
+        DestroyBelongings();
+        belongingExamined = false;
         dialogueManager.finished = false; if (currentVariables.isAllowed == false)
         {
             popularity = popularity + currentVariables.reputationReward;
@@ -204,7 +207,6 @@ public class GameManager : MonoBehaviour
     public IEnumerator KillCoroutine()
     {
         dialoguePlaying = true;
-        DestroyBelongings();
         dialogueManager.finished = false;
         currentVariables = currentCharacter.GetComponent<CharacterDisplay>().display;
         dialogueManager.dialogueToPlay = currentVariables.killDialogue;
@@ -213,6 +215,8 @@ public class GameManager : MonoBehaviour
         yield return new WaitUntil(() => dialogueManager.finished == true);
         yield return new WaitForSeconds(0.5f);
         dialogueManager.finished = false;
+        DestroyBelongings();
+        belongingExamined = false;
         if (currentVariables.isRobot == true && currentVariables.Generation == true && currentVariables.genCount < currentVariables.genImages.Count - 1)
         {
             Debug.Log("GENERATION");
@@ -269,6 +273,7 @@ public class GameManager : MonoBehaviour
     }
     public void EndDay()
     {
+        belongingExamined = false;
         dialoguePlaying = false;
         timeManager.currentTime = 600f;
         for (int i = 1; i <= characters.Count; i++)
@@ -293,6 +298,7 @@ public class GameManager : MonoBehaviour
     }
     public void StartDay()
     {
+        belongingExamined = false;
         dialoguePlaying = false;
         Day++;
         gold = gold - 5;
@@ -333,19 +339,27 @@ public class GameManager : MonoBehaviour
     }
     public void OpenBelongings()
     {
-        currentVariables = currentCharacter.GetComponent<CharacterDisplay>().display;
+        if (belongingExamined == false)
+        {
+            belongingExamined = true;
+            currentVariables = currentCharacter.GetComponent<CharacterDisplay>().display;
 
-        foreach (GameObject belongings in currentVariables.belongings) 
-        {            
-            RectTransform panelRectTransform = gamePanel.GetComponent<RectTransform>();
+            dialogueManager.dialogueToPlay = currentVariables.belongingDialouge;
+            dialogueManager.StopCoroutine("CharacterDialogue");
+            dialogueManager.StartCoroutine("CharacterDialogue");
+            foreach (GameObject belongings in currentVariables.belongings) 
+            {            
+                RectTransform panelRectTransform = gamePanel.GetComponent<RectTransform>();
 
-            float xPos = Random.Range(Mathf.Max(panelRectTransform.rect.xMin, deskXStart), Mathf.Min(panelRectTransform.rect.xMax, deskXEnd));
-            float yPos = Random.Range(Mathf.Max(panelRectTransform.rect.yMin, deskYStart), Mathf.Min(panelRectTransform.rect.yMax, deskYEnd));
+                float xPos = Random.Range(Mathf.Max(panelRectTransform.rect.xMin, deskXStart), Mathf.Min(panelRectTransform.rect.xMax, deskXEnd));
+                float yPos = Random.Range(Mathf.Max(panelRectTransform.rect.yMin, deskYStart), Mathf.Min(panelRectTransform.rect.yMax, deskYEnd));
 
-            Vector3 worldPosition = panelRectTransform.TransformPoint(new Vector3(xPos, yPos, 0));
+                Vector3 worldPosition = panelRectTransform.TransformPoint(new Vector3(xPos, yPos, 0));
 
-            Instantiate(belongings, worldPosition, Quaternion.identity, gamePanel.transform);
+                Instantiate(belongings, worldPosition, Quaternion.identity, gamePanel.transform);
+            }
         }
+        
     }
     public void Lose()
     {

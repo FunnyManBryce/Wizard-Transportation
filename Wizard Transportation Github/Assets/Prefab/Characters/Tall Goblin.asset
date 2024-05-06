@@ -34,7 +34,7 @@ MonoBehaviour:
   denialReason: 
   initalDialogue: Hello. I would really like to use your transportation thingy
   genDialogue: []
-  belongingDialouge: 
+  belongingDialouge: Everything should be here.
   clearDialogue: asdfad
   kickDialogue: sadasd
   killDialogue: sdaasd

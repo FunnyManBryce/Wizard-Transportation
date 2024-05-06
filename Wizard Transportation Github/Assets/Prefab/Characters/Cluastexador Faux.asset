@@ -35,7 +35,7 @@ MonoBehaviour:
   denialReason: 
   initalDialogue: Hello. I am on official government business. Please let me pass.
   genDialogue: []
-  belongingDialouge: 
+  belongingDialouge: Here's my ID, it proves i'm a government guy.
   clearDialogue: dafd
   kickDialogue: adfdada
   killDialogue: adsafds

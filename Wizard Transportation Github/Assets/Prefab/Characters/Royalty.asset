@@ -35,7 +35,7 @@ MonoBehaviour:
   initalDialogue: Why haven't you let me through all ready? I'm much too important
     for this.
   genDialogue: []
-  belongingDialouge: 
+  belongingDialouge: What's the holdup? I don't have time for this.
   clearDialogue: asdfsd
   kickDialogue: wq
   killDialogue: sdsa
