@@ -40,8 +40,8 @@ MonoBehaviour:
   kickDialogue: sad
   killDialogue: dasd
   Generation: 1
-  genCount: 0
-  currentImage: {fileID: 0}
+  genCount: 2
+  currentImage: {fileID: 21300000, guid: f9f2f9ca679cea24d8ec7970c024456b, type: 3}
   genImages:
   - {fileID: 21300000, guid: f9f2f9ca679cea24d8ec7970c024456b, type: 3}
   - {fileID: 21300000, guid: f9f2f9ca679cea24d8ec7970c024456b, type: 3}

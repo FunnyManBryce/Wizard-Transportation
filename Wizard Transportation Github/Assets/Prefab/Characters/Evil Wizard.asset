@@ -26,7 +26,7 @@ MonoBehaviour:
   belongings:
   - {fileID: 5607916073220419663, guid: c896c120db191b641bae695e618a854c, type: 3}
   - {fileID: 5607916073220419663, guid: 7b63e93fa4b0da640b09354050781269, type: 3}
-  - {fileID: 5607916073220419663, guid: 3489dd80b04ec854699490f1d8c4de26, type: 3}
+  - {fileID: 5607916073220419663, guid: 31d222ae651f2be429477e258253ed73, type: 3}
   goldReward: 0
   reputationReward: 5
   reputationPenalty: 10
@@ -42,7 +42,7 @@ MonoBehaviour:
   kickDialogue: adsfad
   killDialogue: dafdf
   Generation: 1
-  genCount: 0
+  genCount: 1
   currentImage: {fileID: 21300000, guid: fc3025c4b119a884892c7d6bde6487e0, type: 3}
   genImages:
   - {fileID: 21300000, guid: fc3025c4b119a884892c7d6bde6487e0, type: 3}
