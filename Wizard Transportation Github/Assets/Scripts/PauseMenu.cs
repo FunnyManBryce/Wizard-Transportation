@@ -38,9 +38,10 @@ public class PauseMenu : MonoBehaviour
     }
     public void Restart()
     {
-        Time.timeScale = 1;
-        SceneManager.LoadScene(restartScene);
+        SceneManager.LoadScene("BryceScene");
         pauseMenu.SetActive(false);
+        Pause();
+        Resume();
     }
 
     public void Quit()
