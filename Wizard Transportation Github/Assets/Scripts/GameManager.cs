@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public GameObject outlibe;
     public GameObject nightPanel;
     public GameObject loseScreen;
+    public GameObject robotsTakeOver;
     public CharVariables currentVariables;
     public int popularity = 70;
     public int gold = 25;
@@ -306,7 +307,7 @@ public class GameManager : MonoBehaviour
         dayDisplay.text = "Day: " + Day;
         if(Day == 15 && robotsAlive > 0)
         {
-            Lose();
+            RoboTakeOver();
         }
         if (popularity < 0 || gold < 0)
         {
@@ -365,10 +366,16 @@ public class GameManager : MonoBehaviour
     {
         loseScreen.SetActive(true);
     }
+    public void RoboTakeOver()
+    {
+        robotsTakeOver.SetActive(true);
+    }
     public void Restart()
     {
         SceneManager.LoadScene("BryceScene");
         loseScreen.SetActive(false);
+        robotsTakeOver.SetActive(false);
+
     }
     private void DestroyBelongings()
     {
