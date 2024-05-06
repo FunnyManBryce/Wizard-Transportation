@@ -19,8 +19,8 @@ MonoBehaviour:
   height: 
   age: 25
   characterClass: Warrior
-  isAllowed: 1
-  isRobot: 0
+  isAllowed: 0
+  isRobot: 1
   destination: City
   hasBag: 0
   belongings: []

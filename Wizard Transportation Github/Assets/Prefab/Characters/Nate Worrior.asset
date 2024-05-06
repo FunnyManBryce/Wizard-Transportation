@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e011aea718c5ebb46846178568346d2f, type: 3}
-  m_Name: Guy 8
+  m_Name: Nate Worrior
   m_EditorClassIdentifier: 
   name: Guy 1
   species: Human
