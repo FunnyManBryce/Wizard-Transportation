@@ -35,6 +35,10 @@ MonoBehaviour:
   - I'm totally not here to rob you...
   - Would you let me rob you if I said pretty please?
   - Look man, I really need some money...
+  belongingDialouge: 
+  clearDialogue: adsda
+  kickDialogue: sad
+  killDialogue: dasd
   Generation: 1
   genCount: 0
   currentImage: {fileID: 0}

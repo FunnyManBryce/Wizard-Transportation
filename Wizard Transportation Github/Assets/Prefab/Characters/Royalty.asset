@@ -32,3 +32,12 @@ MonoBehaviour:
   denialReason: 
   initalDialogue: Why haven't you let me through all ready? I'm much too important
     for this.
+  genDialogue: []
+  belongingDialouge: 
+  clearDialogue: asdfsd
+  kickDialogue: wq
+  killDialogue: sdsa
+  Generation: 0
+  genCount: 0
+  currentImage: {fileID: 0}
+  genImages: []

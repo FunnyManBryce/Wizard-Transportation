@@ -8,11 +8,12 @@ public class DialogueManager : MonoBehaviour
     public GameManager gameManager;
     public string dialogueToPlay = "Now this is epic";
     public TMP_Text Dialogue;
+    public bool finished = false;
     //public float timePerCharacter = 10f;
     // Start is called before the first frame update
     void Start()
     {
-
+        finished = false;
     }
 
     // Update is called once per frame
@@ -27,7 +28,14 @@ public class DialogueManager : MonoBehaviour
         for (int i = 0; i < dialogueToPlay.Length; i++)
         {
             Dialogue.text = Dialogue.text + dialogueToPlay[i];
+            Debug.Log(i);
+            if( i > dialogueToPlay.Length - 2)
+            {
+                Debug.Log("huh");
+                finished = true;
+            }
             yield return new WaitForSeconds(0.075f);
+            
         }
     }
 }

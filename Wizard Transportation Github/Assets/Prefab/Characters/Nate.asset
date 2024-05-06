@@ -31,3 +31,12 @@ MonoBehaviour:
   bribeAmount: 0
   denialReason: 
   initalDialogue: My wife will be showing up soon, please let her in.
+  genDialogue: []
+  belongingDialouge: 
+  clearDialogue: asddfadf
+  kickDialogue: sdasd
+  killDialogue: sdaasdasd
+  Generation: 0
+  genCount: 0
+  currentImage: {fileID: 0}
+  genImages: []

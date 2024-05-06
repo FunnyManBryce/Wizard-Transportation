@@ -31,3 +31,12 @@ MonoBehaviour:
   bribeAmount: 0
   denialReason: 
   initalDialogue: Hello. I would really like to use your transportation thingy
+  genDialogue: []
+  belongingDialouge: 
+  clearDialogue: asdfad
+  kickDialogue: sadasd
+  killDialogue: sdaasd
+  Generation: 0
+  genCount: 0
+  currentImage: {fileID: 0}
+  genImages: []

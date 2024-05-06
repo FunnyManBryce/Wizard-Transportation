@@ -31,3 +31,12 @@ MonoBehaviour:
   bribeAmount: 0
   denialReason: 
   initalDialogue: Have you seen my husband? He should have entered a while ago...
+  genDialogue: []
+  belongingDialouge: 
+  clearDialogue: adsfad
+  kickDialogue: adfda
+  killDialogue: adfdfsaad
+  Generation: 0
+  genCount: 0
+  currentImage: {fileID: 0}
+  genImages: []

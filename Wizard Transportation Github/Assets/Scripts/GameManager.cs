@@ -37,7 +37,6 @@ public class GameManager : MonoBehaviour
             currentCharacter = possibleCharacters[i];
             currentVariables = currentCharacter.GetComponent<CharacterDisplay>().display;
             currentVariables.genCount = 0;
-            Debug.Log(i);
         }
         goldDisplay.text = "Gold: " + gold;
         dayDisplay.text = "Day: " + Day;
@@ -78,9 +77,20 @@ public class GameManager : MonoBehaviour
     }
     public void Accept()
     {
+        StartCoroutine("AcceptCoroutine");
+    }
+    public IEnumerator AcceptCoroutine()
+    {
         DestroyBelongings();
+        dialogueManager.finished = false;
         currentVariables = currentCharacter.GetComponent<CharacterDisplay>().display;
-        if(currentVariables.isAllowed == true)
+        dialogueManager.dialogueToPlay = currentVariables.clearDialogue;
+        dialogueManager.StopCoroutine("CharacterDialogue");
+        dialogueManager.StartCoroutine("CharacterDialogue");
+        yield return new WaitUntil(() => dialogueManager.finished == true);
+        yield return new WaitForSeconds(0.5f);
+        dialogueManager.finished = false;
+        if (currentVariables.isAllowed == true)
         {
             gold = gold + currentVariables.goldReward;
             goldDisplay.text = "Gold: " + gold;
@@ -119,9 +129,19 @@ public class GameManager : MonoBehaviour
     }
     public void Deny()
     {
+        StartCoroutine("DenyCoroutine");
+    }
+    public IEnumerator DenyCoroutine()
+    {
         DestroyBelongings();
+        dialogueManager.finished = false;
         currentVariables = currentCharacter.GetComponent<CharacterDisplay>().display;
-        if (currentVariables.isAllowed == false)
+        dialogueManager.dialogueToPlay = currentVariables.kickDialogue;
+        dialogueManager.StopCoroutine("CharacterDialogue");
+        dialogueManager.StartCoroutine("CharacterDialogue");
+        yield return new WaitUntil(() => dialogueManager.finished == true);
+        yield return new WaitForSeconds(0.5f);
+        dialogueManager.finished = false; if (currentVariables.isAllowed == false)
         {
             popularity = popularity + currentVariables.reputationReward;
             PopularityBar.SetPopularity(popularity);
@@ -151,7 +171,8 @@ public class GameManager : MonoBehaviour
         if (currentVariables.Generation == true)
         {
             dialogueManager.dialogueToPlay = currentVariables.genDialogue[currentVariables.genCount];
-        } else
+        }
+        else
         {
             dialogueManager.dialogueToPlay = currentVariables.initalDialogue;
         }
@@ -164,10 +185,20 @@ public class GameManager : MonoBehaviour
     }
     public void Kill()
     {
+        StartCoroutine("KillCoroutine");
+    }
+    public IEnumerator KillCoroutine()
+    {
         DestroyBelongings();
+        dialogueManager.finished = false;
         currentVariables = currentCharacter.GetComponent<CharacterDisplay>().display;
-
-        if (currentVariables.isRobot == true && currentVariables.Generation == true && currentVariables.genCount < currentVariables.genImages.Count - 1) 
+        dialogueManager.dialogueToPlay = currentVariables.killDialogue;
+        dialogueManager.StopCoroutine("CharacterDialogue");
+        dialogueManager.StartCoroutine("CharacterDialogue");
+        yield return new WaitUntil(() => dialogueManager.finished == true);
+        yield return new WaitForSeconds(0.5f);
+        dialogueManager.finished = false;
+        if (currentVariables.isRobot == true && currentVariables.Generation == true && currentVariables.genCount < currentVariables.genImages.Count - 1)
         {
             Debug.Log("GENERATION");
             currentVariables.genCount++;

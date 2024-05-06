@@ -35,6 +35,10 @@ MonoBehaviour:
   - 'GOAL: ERADICATE ALL LIFEFORMS. LET ME IN.'
   - REQUESTING ENTRY FOR REASONS. WILL GIVE MONEY.
   - hello :) please let me in i will do no harm
+  belongingDialouge: 
+  clearDialogue: adsfads
+  kickDialogue: sdas
+  killDialogue: adsa
   Generation: 1
   genCount: 0
   currentImage: {fileID: 21300000, guid: e9342677df5908149829c115311b8a34, type: 3}

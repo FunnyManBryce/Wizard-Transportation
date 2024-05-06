@@ -31,3 +31,12 @@ MonoBehaviour:
   bribeAmount: 0
   denialReason: 
   initalDialogue: Hello there! I am just passing through on this lovely day!
+  genDialogue: []
+  belongingDialouge: 
+  clearDialogue: adfsdfs
+  kickDialogue: dadfafd
+  killDialogue: dfaafd
+  Generation: 0
+  genCount: 0
+  currentImage: {fileID: 0}
+  genImages: []

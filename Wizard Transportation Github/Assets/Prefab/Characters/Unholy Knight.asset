@@ -36,8 +36,12 @@ MonoBehaviour:
   - Let me in, or i'm gonna uh, i'm gonna hex you!
   - You've made a dangerous enemy. Let me in NOW!
   - 'Ok, I give up... '
+  belongingDialouge: 
+  clearDialogue: adsfad
+  kickDialogue: sdadas
+  killDialogue: dsaasd
   Generation: 1
-  genCount: 0
+  genCount: 2
   currentImage: {fileID: 21300000, guid: 385180823534a1442a028ea4fae72e4e, type: 3}
   genImages:
   - {fileID: 21300000, guid: 385180823534a1442a028ea4fae72e4e, type: 3}

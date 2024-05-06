@@ -32,6 +32,10 @@ MonoBehaviour:
   denialReason: 
   initalDialogue: Hello. I am on official government business. Please let me pass.
   genDialogue: []
+  belongingDialouge: 
+  clearDialogue: dafd
+  kickDialogue: adfdada
+  killDialogue: adsafds
   Generation: 0
   genCount: 0
   currentImage: {fileID: 0}

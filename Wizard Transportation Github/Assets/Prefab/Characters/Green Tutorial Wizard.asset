@@ -31,3 +31,12 @@ MonoBehaviour:
   bribeAmount: 0
   denialReason: 
   initalDialogue: How's the robot hunting going? I wish you luck, friend.
+  genDialogue: []
+  belongingDialouge: 
+  clearDialogue: adsfad
+  kickDialogue: dasda
+  killDialogue: dadf
+  Generation: 0
+  genCount: 0
+  currentImage: {fileID: 0}
+  genImages: []

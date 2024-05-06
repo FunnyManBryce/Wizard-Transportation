@@ -34,6 +34,10 @@ MonoBehaviour:
   genDialogue:
   - I'm a very normal wizard who loves magic yes yes.
   - Look, just because i'm evil doesn't mean you can't let me in.
+  belongingDialouge: 
+  clearDialogue: adsfad
+  kickDialogue: adsfad
+  killDialogue: dafdf
   Generation: 1
   genCount: 0
   currentImage: {fileID: 0}
