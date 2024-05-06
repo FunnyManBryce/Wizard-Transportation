@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     public GameObject nightPanel;
     public GameObject loseScreen;
     public GameObject robotsTakeOver;
+    public GameObject sigmaEnding;
+    public GameObject robotDefeatedEnding;
     public CharVariables currentVariables;
     public int popularity = 70;
     public int gold = 25;
@@ -239,6 +241,10 @@ public class GameManager : MonoBehaviour
             goldDisplay.text = "Gold: " + gold;
             PopularityBar.SetPopularity(popularity);
             robotsAlive--;
+            if(robotsAlive == 0 && possibleCharacters.Count > 0 || characters.Count > 0)
+            {
+                robotDefeatedEnding.SetActive(true);
+            }
         }
         else if (currentVariables.isAllowed == false)
         {
@@ -249,6 +255,10 @@ public class GameManager : MonoBehaviour
         {
             popularity = popularity - (currentVariables.reputationPenalty + 30);
             PopularityBar.SetPopularity(popularity);
+        }
+        if (possibleCharacters.Count == 0 && characters.Count == 0) 
+        {
+            sigmaEnding.SetActive(true);
         }
         characters.Remove(currentCharacter);
         //Destroy(currentCharacter);
@@ -375,7 +385,8 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("BryceScene");
         loseScreen.SetActive(false);
         robotsTakeOver.SetActive(false);
-
+        sigmaEnding.SetActive(false);
+        robotDefeatedEnding.SetActive(false);
     }
     private void DestroyBelongings()
     {
