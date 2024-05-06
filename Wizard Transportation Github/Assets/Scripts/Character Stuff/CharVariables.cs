@@ -32,6 +32,10 @@ public class CharVariables : ScriptableObject
     //Dialogue
     public string initalDialogue;
     public List<string> genDialogue;
+    public string belongingDialouge;
+    public string clearDialogue;
+    public string kickDialogue;
+    public string killDialogue;
 
     //Generations
     public bool Generation;
