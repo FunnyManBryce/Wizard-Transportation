@@ -23,7 +23,10 @@ MonoBehaviour:
   isRobot: 1
   destination: City
   hasBag: 0
-  belongings: []
+  belongings:
+  - {fileID: 5607916073220419663, guid: 6aba7164644f80f4d94ea20af56ec26d, type: 3}
+  - {fileID: 5607916073220419663, guid: 910b0f3b5bf25264581dfb9b350e6008, type: 3}
+  - {fileID: 5607916073220419663, guid: f742da207cf859848bee4b1ef37e7fc9, type: 3}
   goldReward: 0
   reputationReward: 15
   reputationPenalty: 50

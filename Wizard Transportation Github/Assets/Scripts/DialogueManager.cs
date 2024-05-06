@@ -28,10 +28,8 @@ public class DialogueManager : MonoBehaviour
         for (int i = 0; i < dialogueToPlay.Length; i++)
         {
             Dialogue.text = Dialogue.text + dialogueToPlay[i];
-            Debug.Log(i);
             if( i > dialogueToPlay.Length - 2)
             {
-                Debug.Log("huh");
                 finished = true;
             }
             yield return new WaitForSeconds(0.075f);

@@ -365,10 +365,11 @@ MonoBehaviour:
   gold: 25
   Day: 1
   robotsAlive: 5
-  deskXStart: 0
-  deskXEnd: 0
-  deskYStart: 0
-  deskYEnd: 0
+  deskXStart: -150
+  deskXEnd: 300
+  deskYStart: -50
+  deskYEnd: 100
+  dialoguePlaying: 0
   goldDisplay: {fileID: 735503080}
   dayDisplay: {fileID: 458903157}
   PopularityBar: {fileID: 75548031}
@@ -2063,6 +2064,7 @@ MonoBehaviour:
   gameManager: {fileID: 9950375}
   dialogueToPlay: Now this is epic
   Dialogue: {fileID: 728632112}
+  finished: 0
 --- !u!1 &604577547
 GameObject:
   m_ObjectHideFlags: 0
@@ -2386,7 +2388,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &629407844
 RectTransform:
   m_ObjectHideFlags: 0

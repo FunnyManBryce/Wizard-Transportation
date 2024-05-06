@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     public float deskXStart, deskXEnd;
     public float deskYStart, deskYEnd;
     private bool isDragging = false;
+    public bool dialoguePlaying;
     private Vector3 offset;
     public TMP_Text goldDisplay;
     public TMP_Text dayDisplay;
@@ -77,10 +78,14 @@ public class GameManager : MonoBehaviour
     }
     public void Accept()
     {
-        StartCoroutine("AcceptCoroutine");
+        if(dialoguePlaying == false)
+        {
+            StartCoroutine("AcceptCoroutine");
+        }
     }
     public IEnumerator AcceptCoroutine()
     {
+        dialoguePlaying = true;
         DestroyBelongings();
         dialogueManager.finished = false;
         currentVariables = currentCharacter.GetComponent<CharacterDisplay>().display;
@@ -126,13 +131,18 @@ public class GameManager : MonoBehaviour
         {
             Lose();
         }
+        dialoguePlaying = false;
     }
     public void Deny()
     {
-        StartCoroutine("DenyCoroutine");
+        if (dialoguePlaying == false)
+        {
+            StartCoroutine("DenyCoroutine");
+        }
     }
     public IEnumerator DenyCoroutine()
     {
+        dialoguePlaying = true;
         DestroyBelongings();
         dialogueManager.finished = false;
         currentVariables = currentCharacter.GetComponent<CharacterDisplay>().display;
@@ -168,6 +178,7 @@ public class GameManager : MonoBehaviour
         currentCharacter = characters[0];
         currentCharacter.SetActive(true);
         currentVariables = currentCharacter.GetComponent<CharacterDisplay>().display;
+        dialoguePlaying = false;
         if (currentVariables.Generation == true)
         {
             dialogueManager.dialogueToPlay = currentVariables.genDialogue[currentVariables.genCount];
@@ -185,10 +196,14 @@ public class GameManager : MonoBehaviour
     }
     public void Kill()
     {
-        StartCoroutine("KillCoroutine");
+        if (dialoguePlaying == false)
+        {
+            StartCoroutine("KillCoroutine");
+        }
     }
     public IEnumerator KillCoroutine()
     {
+        dialoguePlaying = true;
         DestroyBelongings();
         dialogueManager.finished = false;
         currentVariables = currentCharacter.GetComponent<CharacterDisplay>().display;
@@ -236,6 +251,7 @@ public class GameManager : MonoBehaviour
         currentCharacter = characters[0];
         currentCharacter.SetActive(true);
         currentVariables = currentCharacter.GetComponent<CharacterDisplay>().display;
+        dialoguePlaying = false;
         if (currentVariables.Generation == true)
         {
             dialogueManager.dialogueToPlay = currentVariables.genDialogue[currentVariables.genCount];
@@ -253,6 +269,7 @@ public class GameManager : MonoBehaviour
     }
     public void EndDay()
     {
+        dialoguePlaying = false;
         timeManager.currentTime = 600f;
         for (int i = 1; i <= characters.Count; i++)
         {
@@ -276,6 +293,7 @@ public class GameManager : MonoBehaviour
     }
     public void StartDay()
     {
+        dialoguePlaying = false;
         Day++;
         gold = gold - 5;
         goldDisplay.text = "Gold: " + gold;

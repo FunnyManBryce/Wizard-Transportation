@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7828746710775369364}
   - component: {fileID: 4571393182114336652}
   m_Layer: 5
-  m_Name: Magic Scroll
+  m_Name: Oil
   m_TagString: Belongings
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7992c11b41cf41c49aeab5fc991f6f77, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 503534b0d89ae184eaf12af5f460e944, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

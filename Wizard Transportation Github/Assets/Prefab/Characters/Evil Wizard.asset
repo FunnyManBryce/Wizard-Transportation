@@ -23,7 +23,10 @@ MonoBehaviour:
   isRobot: 0
   destination: City
   hasBag: 0
-  belongings: []
+  belongings:
+  - {fileID: 5607916073220419663, guid: c896c120db191b641bae695e618a854c, type: 3}
+  - {fileID: 5607916073220419663, guid: 7b63e93fa4b0da640b09354050781269, type: 3}
+  - {fileID: 5607916073220419663, guid: 3489dd80b04ec854699490f1d8c4de26, type: 3}
   goldReward: 0
   reputationReward: 5
   reputationPenalty: 10
@@ -40,7 +43,7 @@ MonoBehaviour:
   killDialogue: dafdf
   Generation: 1
   genCount: 0
-  currentImage: {fileID: 0}
+  currentImage: {fileID: 21300000, guid: fc3025c4b119a884892c7d6bde6487e0, type: 3}
   genImages:
   - {fileID: 21300000, guid: fc3025c4b119a884892c7d6bde6487e0, type: 3}
   - {fileID: 21300000, guid: fc3025c4b119a884892c7d6bde6487e0, type: 3}
