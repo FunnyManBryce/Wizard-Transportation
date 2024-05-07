@@ -28,6 +28,7 @@ MonoBehaviour:
   - {fileID: 5607916073220419663, guid: 7b63e93fa4b0da640b09354050781269, type: 3}
   - {fileID: 5607916073220419663, guid: 1fb54e5193e5f464587345a5b8b6297c, type: 3}
   - {fileID: 5607916073220419663, guid: 1fb54e5193e5f464587345a5b8b6297c, type: 3}
+  - {fileID: 5607916073220419663, guid: 4acfae8e68cd7024a8eb9d26341ec3e9, type: 3}
   goldReward: 2
   reputationReward: 5
   reputationPenalty: 15
@@ -35,12 +36,16 @@ MonoBehaviour:
   bribeAmount: 0
   denialReason: 
   initalDialogue: Hello. I would really like to use your transportation thingy
-  genDialogue: []
+  genDialogue:
+  - Hello. I would really like to use your transportation thingy
+  - I took off my trenchcoat. Now you can't confuse me with anyone else.
   belongingDialouge: Everything should be here.
-  clearDialogue: asdfad
-  kickDialogue: sadasd
-  killDialogue: sdaasd
-  Generation: 0
+  clearDialogue: Good day to you.
+  kickDialogue: Huh? Was I suspicious?
+  killDialogue: Definitely not part of my weekend plans...
+  Generation: 1
   genCount: 0
   currentImage: {fileID: 0}
-  genImages: []
+  genImages:
+  - {fileID: 21300000, guid: 15a9c965a8f6c2045a2d69c916506406, type: 3}
+  - {fileID: 21300000, guid: 95eeea7c6348bba479a9dcd514a10865, type: 3}

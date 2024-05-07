@@ -38,9 +38,9 @@ MonoBehaviour:
   initalDialogue: My wife will be showing up soon, please let her in.
   genDialogue: []
   belongingDialouge: Oh? You need to check my stuff? Alrighty!
-  clearDialogue: 
-  kickDialogue: 
-  killDialogue: 
+  clearDialogue: Wait, I never had a wife.
+  kickDialogue: Oh, how will I explain this to the others...
+  killDialogue: I really thought you wouldn't notice...
   Generation: 0
   genCount: 0
   currentImage: {fileID: 0}

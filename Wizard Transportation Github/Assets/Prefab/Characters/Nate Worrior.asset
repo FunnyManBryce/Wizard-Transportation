@@ -23,19 +23,25 @@ MonoBehaviour:
   isRobot: 0
   destination: City
   hasBag: 0
-  belongings: []
-  goldReward: 2
+  belongings:
+  - {fileID: 5607916073220419663, guid: c896c120db191b641bae695e618a854c, type: 3}
+  - {fileID: 5607916073220419663, guid: 1fb54e5193e5f464587345a5b8b6297c, type: 3}
+  - {fileID: 5607916073220419663, guid: 7b63e93fa4b0da640b09354050781269, type: 3}
+  - {fileID: 5607916073220419663, guid: 1fb54e5193e5f464587345a5b8b6297c, type: 3}
+  - {fileID: 5607916073220419663, guid: 1fb54e5193e5f464587345a5b8b6297c, type: 3}
+  goldReward: 3
   reputationReward: 5
   reputationPenalty: 10
   isBribing: 0
   bribeAmount: 0
   denialReason: 
-  initalDialogue: adfdsdfa
+  initalDialogue: I hail from distant lands, it's gonna be nice to finally get some
+    rest.
   genDialogue: []
-  belongingDialouge: 
-  clearDialogue: adsfasd
-  kickDialogue: 
-  killDialogue: 
+  belongingDialouge: I don't have much on me. Is this enough?
+  clearDialogue: Finally, I haven't slept in months.
+  kickDialogue: No rest for me, I suppose...
+  killDialogue: Well, this sucks.
   Generation: 0
   genCount: 0
   currentImage: {fileID: 0}
