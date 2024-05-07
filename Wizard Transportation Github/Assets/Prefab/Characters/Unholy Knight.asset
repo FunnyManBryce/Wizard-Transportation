@@ -42,9 +42,9 @@ MonoBehaviour:
   - You've made a dangerous enemy. Let me in NOW!
   - 'Ok, I give up... '
   belongingDialouge: Oh... you have to check my stuff?
-  clearDialogue: adsfad
-  kickDialogue: sdadas
-  killDialogue: dsaasd
+  clearDialogue: YES, let's go!
+  kickDialogue: I'll be back, you better let me in next time.
+  killDialogue: I guess this is what I get for being evil.
   Generation: 1
   genCount: 0
   currentImage: {fileID: 21300000, guid: 385180823534a1442a028ea4fae72e4e, type: 3}

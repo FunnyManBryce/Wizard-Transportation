@@ -241,9 +241,12 @@ public class GameManager : MonoBehaviour
             goldDisplay.text = "Gold: " + gold;
             PopularityBar.SetPopularity(popularity);
             robotsAlive--;
-            if(robotsAlive == 0 && possibleCharacters.Count > 0 || characters.Count > 0)
+            if(robotsAlive == 0)
             {
-                robotDefeatedEnding.SetActive(true);
+                if(possibleCharacters.Count > 0 || characters.Count > 0)
+                {
+                    robotDefeatedEnding.SetActive(true);
+                }
             }
         }
         else if (currentVariables.isAllowed == false)
