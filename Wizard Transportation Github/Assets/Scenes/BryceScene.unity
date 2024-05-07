@@ -5273,7 +5273,7 @@ MonoBehaviour:
     loop: 1
     initialVolume: 0
     volume: 1.5
-    pitch: 0
+    pitch: 1
     source: {fileID: 0}
   - name: 
     clip: {fileID: 0}
