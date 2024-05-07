@@ -23,7 +23,9 @@ MonoBehaviour:
   isRobot: 1
   destination: City
   hasBag: 0
-  belongings: []
+  belongings:
+  - {fileID: 5607916073220419663, guid: 909846baa1260af4a97dd1c44273b158, type: 3}
+  - {fileID: 5607916073220419663, guid: e2fc3ba88f65d6a4c98430f268895d2d, type: 3}
   goldReward: 0
   reputationReward: 15
   reputationPenalty: 50
@@ -39,8 +41,8 @@ MonoBehaviour:
   kickDialogue: Generation failure. Improvement is imminent
   killDialogue: Generation failure. Self destruct initiated
   Generation: 1
-  genCount: 0
-  currentImage: {fileID: 0}
+  genCount: 1
+  currentImage: {fileID: 21300000, guid: 7a9db725b8972dd4a9dd613773a6c990, type: 3}
   genImages:
   - {fileID: 21300000, guid: ace7dafaac17f3948a793f96b9f4b3fa, type: 3}
   - {fileID: 21300000, guid: 7a9db725b8972dd4a9dd613773a6c990, type: 3}

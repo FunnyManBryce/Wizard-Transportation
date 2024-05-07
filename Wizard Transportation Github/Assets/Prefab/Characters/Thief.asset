@@ -23,7 +23,17 @@ MonoBehaviour:
   isRobot: 0
   destination: City
   hasBag: 0
-  belongings: []
+  belongings:
+  - {fileID: 5607916073220419663, guid: 1fb54e5193e5f464587345a5b8b6297c, type: 3}
+  - {fileID: 5607916073220419663, guid: 1fb54e5193e5f464587345a5b8b6297c, type: 3}
+  - {fileID: 5607916073220419663, guid: 1fb54e5193e5f464587345a5b8b6297c, type: 3}
+  - {fileID: 5607916073220419663, guid: 1fb54e5193e5f464587345a5b8b6297c, type: 3}
+  - {fileID: 5607916073220419663, guid: 1fb54e5193e5f464587345a5b8b6297c, type: 3}
+  - {fileID: 5607916073220419663, guid: 1fb54e5193e5f464587345a5b8b6297c, type: 3}
+  - {fileID: 5607916073220419663, guid: 1fb54e5193e5f464587345a5b8b6297c, type: 3}
+  - {fileID: 5607916073220419663, guid: 1fb54e5193e5f464587345a5b8b6297c, type: 3}
+  - {fileID: 5607916073220419663, guid: 1fb54e5193e5f464587345a5b8b6297c, type: 3}
+  - {fileID: 5607916073220419663, guid: 1fb54e5193e5f464587345a5b8b6297c, type: 3}
   goldReward: 25
   reputationReward: 5
   reputationPenalty: 15
@@ -40,7 +50,7 @@ MonoBehaviour:
   kickDialogue: sad
   killDialogue: dasd
   Generation: 1
-  genCount: 0
+  genCount: 1
   currentImage: {fileID: 21300000, guid: f9f2f9ca679cea24d8ec7970c024456b, type: 3}
   genImages:
   - {fileID: 21300000, guid: f9f2f9ca679cea24d8ec7970c024456b, type: 3}

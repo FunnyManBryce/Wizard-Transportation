@@ -26,7 +26,10 @@ MonoBehaviour:
   belongings:
   - {fileID: 5607916073220419663, guid: 3eb3295c420b2fe4db0fc2019bb5ed7f, type: 3}
   - {fileID: 5607916073220419663, guid: 3489dd80b04ec854699490f1d8c4de26, type: 3}
-  goldReward: 0
+  - {fileID: 5607916073220419663, guid: 6a53a7fc354d7b9448e0e2f35d958400, type: 3}
+  - {fileID: 5607916073220419663, guid: 6a53a7fc354d7b9448e0e2f35d958400, type: 3}
+  - {fileID: 5607916073220419663, guid: 6a53a7fc354d7b9448e0e2f35d958400, type: 3}
+  goldReward: 3
   reputationReward: 5
   reputationPenalty: 25
   isBribing: 0

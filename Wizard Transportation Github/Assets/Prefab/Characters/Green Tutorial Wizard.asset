@@ -27,6 +27,8 @@ MonoBehaviour:
   - {fileID: 5607916073220419663, guid: c896c120db191b641bae695e618a854c, type: 3}
   - {fileID: 5607916073220419663, guid: 7b63e93fa4b0da640b09354050781269, type: 3}
   - {fileID: 5607916073220419663, guid: 3a8975cce1551cc4a8b1caf5ad6a30e3, type: 3}
+  - {fileID: 5607916073220419663, guid: 1fb54e5193e5f464587345a5b8b6297c, type: 3}
+  - {fileID: 5607916073220419663, guid: 1fb54e5193e5f464587345a5b8b6297c, type: 3}
   goldReward: 2
   reputationReward: 5
   reputationPenalty: 10
