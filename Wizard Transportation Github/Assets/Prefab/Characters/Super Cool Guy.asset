@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e011aea718c5ebb46846178568346d2f, type: 3}
-  m_Name: Guy 10
+  m_Name: Super Cool Guy
   m_EditorClassIdentifier: 
   name: Guy 1
   species: Human
@@ -24,7 +24,7 @@ MonoBehaviour:
   destination: City
   hasBag: 0
   belongings: []
-  goldReward: 2
+  goldReward: 4
   reputationReward: 5
   reputationPenalty: 0
   isBribing: 0
@@ -33,7 +33,7 @@ MonoBehaviour:
   initalDialogue: 
   genDialogue: []
   belongingDialouge: 
-  clearDialogue: adsfdas
+  clearDialogue: adfadf
   kickDialogue: 
   killDialogue: 
   Generation: 0

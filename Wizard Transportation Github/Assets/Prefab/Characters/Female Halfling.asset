@@ -35,9 +35,9 @@ MonoBehaviour:
   initalDialogue: Have you seen my husband? He should have entered a while ago...
   genDialogue: []
   belongingDialouge: Did I forget anything?
-  clearDialogue: adsfad
-  kickDialogue: adfda
-  killDialogue: adfdfsaad
+  clearDialogue: Thank you!
+  kickDialogue: Oh...
+  killDialogue: What's going on?
   Generation: 0
   genCount: 0
   currentImage: {fileID: 0}

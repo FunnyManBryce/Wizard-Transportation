@@ -26,11 +26,11 @@ MonoBehaviour:
   belongings: []
   goldReward: 2
   reputationReward: 5
-  reputationPenalty: 0
+  reputationPenalty: 10
   isBribing: 0
   bribeAmount: 0
   denialReason: 
-  initalDialogue: 
+  initalDialogue: adfdsdfa
   genDialogue: []
   belongingDialouge: 
   clearDialogue: adsfasd

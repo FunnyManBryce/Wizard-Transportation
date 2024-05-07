@@ -36,9 +36,9 @@ MonoBehaviour:
     for this.
   genDialogue: []
   belongingDialouge: What's the holdup? I don't have time for this.
-  clearDialogue: asdfsd
-  kickDialogue: wq
-  killDialogue: sdsa
+  clearDialogue: Finally, took you long enough.
+  kickDialogue: This is absolutely proposterous!
+  killDialogue: My lawyers will be hearing about this!
   Generation: 0
   genCount: 0
   currentImage: {fileID: 0}

@@ -36,10 +36,10 @@ MonoBehaviour:
   denialReason: 
   initalDialogue: Hello there! I am just passing through on this lovely day!
   genDialogue: []
-  belongingDialouge: he he he ha
-  clearDialogue: adfsdfs
-  kickDialogue: dadfafd
-  killDialogue: dfaafd
+  belongingDialouge: Here's my stuff!
+  clearDialogue: Take care!
+  kickDialogue: I forgive you, but please let me in next time!
+  killDialogue: OH MY  G O D !
   Generation: 0
   genCount: 0
   currentImage: {fileID: 0}

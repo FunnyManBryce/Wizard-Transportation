@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7290402163415209088}
   - component: {fileID: 1670931361839494639}
-  - component: {fileID: 7085094824694062105}
+  - component: {fileID: 7373466209226015129}
   m_Layer: 0
-  m_Name: Nate Worrior
+  m_Name: Super Cool Guy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8b91e0d4be8e2642887c8deeeca710c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  display: {fileID: 11400000, guid: 3ebc29b1a2cdf1d46873a72049692684, type: 2}
---- !u!212 &7085094824694062105
+  display: {fileID: 11400000, guid: 406dc467a9326e945a6b74d3c7af2122, type: 2}
+--- !u!212 &7373466209226015129
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -87,12 +87,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2777ccf8f87803a44b4ba573482a9c09, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f55e7ca4d5577eb4ea53acdc91d1b9ed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.6, y: 0.6}
+  m_Size: {x: 0.64, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

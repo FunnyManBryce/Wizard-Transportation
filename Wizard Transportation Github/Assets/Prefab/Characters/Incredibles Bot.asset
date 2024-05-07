@@ -40,12 +40,12 @@ MonoBehaviour:
   - hello :) please let me in i will do no harm
   - 'I . . . a m   h u m a n . '
   belongingDialouge: WHAT ARE YOU LOOKING AT
-  clearDialogue: adsfads
+  clearDialogue: THANK YOU FOR YOUR COOPERATION
   kickDialogue: 'DIRECTIVE UNCLEAR: LET ME IN'
   killDialogue: I'LL BE BACK
   Generation: 1
-  genCount: 3
-  currentImage: {fileID: 21300000, guid: 3f65867aff9121f44919400de33781ff, type: 3}
+  genCount: 1
+  currentImage: {fileID: 21300000, guid: e9342677df5908149829c115311b8a34, type: 3}
   genImages:
   - {fileID: 21300000, guid: b1e74f74f6a01d3419180eb7e181c47d, type: 3}
   - {fileID: 21300000, guid: e9342677df5908149829c115311b8a34, type: 3}

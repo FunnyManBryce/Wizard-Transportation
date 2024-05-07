@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e011aea718c5ebb46846178568346d2f, type: 3}
-  m_Name: Robot 2
+  m_Name: King Imposter
   m_EditorClassIdentifier: 
   name: Guy 1
   species: Robot
@@ -24,18 +24,19 @@ MonoBehaviour:
   destination: City
   hasBag: 0
   belongings: []
-  goldReward: 5
+  goldReward: 0
   reputationReward: 10
-  reputationPenalty: 0
+  reputationPenalty: 40
   isBribing: 0
   bribeAmount: 0
   denialReason: 
-  initalDialogue: 
+  initalDialogue: Why haven't you let me through all ready? I'm much too important
+    for this.
   genDialogue: []
-  belongingDialouge: 
-  clearDialogue: adsfa
-  kickDialogue: 
-  killDialogue: 
+  belongingDialouge: What's the holdup? I don't have time for this.
+  clearDialogue: Finally.
+  kickDialogue: This is absolutely...
+  killDialogue: I have failed.
   Generation: 0
   genCount: 0
   currentImage: {fileID: 0}

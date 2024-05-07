@@ -36,9 +36,9 @@ MonoBehaviour:
   - Hello. We, er... I would really like to use your transportation thingy
   - Cmon, you won't even notice us going in, I swear!
   belongingDialouge: erm... this is awkward.
-  clearDialogue: jkdldflk
-  kickDialogue: dfjkdkl
-  killDialogue: dafd
+  clearDialogue: YIPPEE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  kickDialogue: Aww maaaaann
+  killDialogue: AAAAAAAAHHHHHHHHHH!!!!
   Generation: 1
   genCount: 0
   currentImage: {fileID: 21300000, guid: 15a9c965a8f6c2045a2d69c916506406, type: 3}

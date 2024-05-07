@@ -36,9 +36,9 @@ MonoBehaviour:
   initalDialogue: Hello. I am on official government business. Please let me pass.
   genDialogue: []
   belongingDialouge: Here's my ID, it proves i'm a government guy.
-  clearDialogue: dafd
-  kickDialogue: adfdada
-  killDialogue: adsafds
+  clearDialogue: Thanks.
+  kickDialogue: Oh, well this sucks.
+  killDialogue: Wait what
   Generation: 0
   genCount: 0
   currentImage: {fileID: 0}

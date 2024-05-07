@@ -36,9 +36,9 @@ MonoBehaviour:
   initalDialogue: How's the robot hunting going? I wish you luck, friend.
   genDialogue: []
   belongingDialouge: I should have everything ready!
-  clearDialogue: adsfad
-  kickDialogue: dasda
-  killDialogue: dadf
+  clearDialogue: Thanks for letting me through!
+  kickDialogue: You know I'm not a robot, right?
+  killDialogue: Wait... what are you doing!?
   Generation: 0
   genCount: 0
   currentImage: {fileID: 0}
