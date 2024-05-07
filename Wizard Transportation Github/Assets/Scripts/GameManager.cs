@@ -38,7 +38,6 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         FindObjectOfType<LeoAudioManager>().Play("Main Music");
-
         for (int i = 0; i <= possibleCharacters.Count - 1; i++) //REALLY important for generation system to reset
         {
             currentCharacter = possibleCharacters[i];
