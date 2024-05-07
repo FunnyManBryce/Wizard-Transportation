@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public List<GameObject> futureCharacters;
     public List<GameObject> possibleCharacters;
     public List<GameObject> characters;
     public int charPerDay;
@@ -242,13 +243,6 @@ public class GameManager : MonoBehaviour
             goldDisplay.text = "Gold: " + gold;
             PopularityBar.SetPopularity(popularity);
             robotsAlive--;
-            if(robotsAlive == 0)
-            {
-                if(possibleCharacters.Count > 0 || characters.Count > 0)
-                {
-                    robotDefeatedEnding.SetActive(true);
-                }
-            }
         }
         else if (currentVariables.isAllowed == false)
         {
@@ -271,6 +265,10 @@ public class GameManager : MonoBehaviour
         currentCharacter.SetActive(true);
         currentVariables = currentCharacter.GetComponent<CharacterDisplay>().display;
         dialoguePlaying = false;
+        if (possibleCharacters.Count == 0 && characters.Count == 0)
+        {
+            sigmaEnding.SetActive(true);
+        }
         if (currentVariables.Generation == true)
         {
             dialogueManager.dialogueToPlay = currentVariables.genDialogue[currentVariables.genCount];
@@ -316,12 +314,25 @@ public class GameManager : MonoBehaviour
         belongingExamined = false;
         dialoguePlaying = false;
         Day++;
+        if(Day == 2)
+        {
+            charPerDay++;
+        }
+        if(Day < 9)
+        {
+            possibleCharacters.Add(futureCharacters[0]);
+            futureCharacters.Remove(futureCharacters[0]);
+        }
         gold = gold - 5;
         goldDisplay.text = "Gold: " + gold;
         dayDisplay.text = "Day: " + Day;
-        if(Day == 15 && robotsAlive > 0)
+        if(Day == 16 && robotsAlive > 0)
         {
             RoboTakeOver();
+        }
+        else if(Day == 16 && robotsAlive == 0)
+        {
+            robotDefeatedEnding.SetActive(true);
         }
         if (popularity < 0 || gold < 0)
         {
@@ -332,6 +343,10 @@ public class GameManager : MonoBehaviour
         nightPanel.SetActive(false);
         timeManager.currentTime = 600f;
         timeManager.timeScale = 10f;
+        if(charPerDay > possibleCharacters.Count) 
+        {
+            charPerDay = possibleCharacters.Count;
+        }
         for (int i = 1; i <= charPerDay; i++)
         {
             currentCharacter = possibleCharacters[Random.Range(0, possibleCharacters.Count)];

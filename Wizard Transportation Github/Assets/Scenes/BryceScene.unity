@@ -339,27 +339,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59afe9535b2c9b44bb25365df7e61002, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  futureCharacters:
+  - {fileID: 341439641}
+  - {fileID: 26441614}
+  - {fileID: 2068164696}
+  - {fileID: 1116178085}
+  - {fileID: 620704779}
+  - {fileID: 837695700}
+  - {fileID: 1359620967}
   possibleCharacters:
   - {fileID: 823672143}
   - {fileID: 48550015}
-  - {fileID: 620704779}
   - {fileID: 984769767}
-  - {fileID: 26441614}
-  - {fileID: 781063652}
-  - {fileID: 1116178085}
   - {fileID: 193080733}
-  - {fileID: 1817696952}
   - {fileID: 89019274}
-  - {fileID: 341439641}
   - {fileID: 2133077558}
-  - {fileID: 151847470}
-  - {fileID: 837695700}
-  - {fileID: 1359620967}
-  - {fileID: 2068164696}
-  - {fileID: 923440574}
+  - {fileID: 1817696952}
   - {fileID: 1659551252}
-  characters: []
-  charPerDay: 5
+  - {fileID: 151847470}
+  - {fileID: 923440574}
+  characters:
+  - {fileID: 781063652}
+  charPerDay: 4
   currentCharacter: {fileID: 0}
   dialogueManager: {fileID: 567529992}
   gamePanel: {fileID: 730842969}
