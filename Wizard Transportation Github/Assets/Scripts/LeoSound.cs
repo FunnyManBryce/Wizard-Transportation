@@ -2,8 +2,7 @@ using UnityEngine.Audio;
 using UnityEngine;
 
 [System.Serializable]
-
-public class LeoSound : MonoBehaviour
+public class LeoSound
 {
     public string name;
 

@@ -22,13 +22,13 @@ public class LeoAudioManager : MonoBehaviour
         }
     }
 
-    public void Play(string name)
+    public void Play (string name)
     {
         LeoSound s = Array.Find(sounds, sound => sound.name == name);
         s.source.Play();
     }
 
-    public void Stop(string name)
+    public void Stop (string name)
     {
         LeoSound s = Array.Find(sounds, sound => sound.name == name);
         s.source.Stop();
