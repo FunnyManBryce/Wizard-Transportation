@@ -31,7 +31,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.0833334
+        time: 1.0333333
         value: 1
         inSlope: -0
         outSlope: 0
@@ -40,7 +40,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.1
+        time: 1.1666666
         value: 0
         inSlope: 0
         outSlope: 0
@@ -60,13 +60,13 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 21300000, guid: fcb2b9eadfc5cce429c0d3db2ca99f2d, type: 3}
+      value: {fileID: 21300000, guid: 1e5e9edb29feef7438f94c4c60eb44e6, type: 3}
     - time: 0.083333336
-      value: {fileID: 21300000, guid: 6826e8fa36686284894b5aaebd1b219e, type: 3}
+      value: {fileID: 21300000, guid: df900d8f827493341a1d989a25113c91, type: 3}
     - time: 0.18333334
-      value: {fileID: 21300000, guid: 59688fad4ac5e0f449e9d06567f42e89, type: 3}
+      value: {fileID: 21300000, guid: 527524881df1d044ba4c3353a4f3affd, type: 3}
     - time: 0.3
-      value: {fileID: 21300000, guid: a1711dcb8f5128d4fb427a3f4cd1df30, type: 3}
+      value: {fileID: 21300000, guid: deef079183983144ea7cc5fc87d57384, type: 3}
     - time: 0.4
       value: {fileID: 21300000, guid: 4a6a5837762299f4882df558dc33ea14, type: 3}
     - time: 0.5
@@ -79,8 +79,10 @@ AnimationClip:
       value: {fileID: 21300000, guid: 85aa6088a312c0247bb051f5a79a0c4e, type: 3}
     - time: 0.93333334
       value: {fileID: 21300000, guid: f9150785bd4fa014592e292af0c8d8ec, type: 3}
-    - time: 1.0833334
-      value: {fileID: 21300000, guid: f9150785bd4fa014592e292af0c8d8ec, type: 3}
+    - time: 1.0333333
+      value: {fileID: 21300000, guid: 2d22924b6c6710d4a862ca3cb90b2ccd, type: 3}
+    - time: 1.1833333
+      value: {fileID: 21300000, guid: d70fe1425d171d842ad4230254e29cc9, type: 3}
     attribute: m_Sprite
     path: 
     classID: 114
@@ -112,23 +114,24 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 21300000, guid: fcb2b9eadfc5cce429c0d3db2ca99f2d, type: 3}
-    - {fileID: 21300000, guid: 6826e8fa36686284894b5aaebd1b219e, type: 3}
-    - {fileID: 21300000, guid: 59688fad4ac5e0f449e9d06567f42e89, type: 3}
-    - {fileID: 21300000, guid: a1711dcb8f5128d4fb427a3f4cd1df30, type: 3}
+    - {fileID: 21300000, guid: 1e5e9edb29feef7438f94c4c60eb44e6, type: 3}
+    - {fileID: 21300000, guid: df900d8f827493341a1d989a25113c91, type: 3}
+    - {fileID: 21300000, guid: 527524881df1d044ba4c3353a4f3affd, type: 3}
+    - {fileID: 21300000, guid: deef079183983144ea7cc5fc87d57384, type: 3}
     - {fileID: 21300000, guid: 4a6a5837762299f4882df558dc33ea14, type: 3}
     - {fileID: 21300000, guid: c899e894614a64c4a86bdc7c9ead7b76, type: 3}
     - {fileID: 21300000, guid: 2e6cc50440a133e4a823f903c8fa5e0a, type: 3}
     - {fileID: 21300000, guid: 7c437e78adea6614095f0a9c739c7b8f, type: 3}
     - {fileID: 21300000, guid: 85aa6088a312c0247bb051f5a79a0c4e, type: 3}
     - {fileID: 21300000, guid: f9150785bd4fa014592e292af0c8d8ec, type: 3}
-    - {fileID: 21300000, guid: f9150785bd4fa014592e292af0c8d8ec, type: 3}
+    - {fileID: 21300000, guid: 2d22924b6c6710d4a862ca3cb90b2ccd, type: 3}
+    - {fileID: 21300000, guid: d70fe1425d171d842ad4230254e29cc9, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.1
+    m_StopTime: 1.1999999
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -158,7 +161,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.0833334
+        time: 1.0333333
         value: 1
         inSlope: -0
         outSlope: 0
@@ -167,7 +170,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.1
+        time: 1.1666666
         value: 0
         inSlope: 0
         outSlope: 0

@@ -230,7 +230,7 @@ public class GameManager : MonoBehaviour
         dialogueManager.StopCoroutine("CharacterDialogue");
         dialogueManager.StartCoroutine("CharacterDialogue");
         yield return new WaitUntil(() => dialogueManager.finished == true);
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.25f);
         dialogueManager.finished = false;
         DestroyBelongings();
         belongingExamined = false;
