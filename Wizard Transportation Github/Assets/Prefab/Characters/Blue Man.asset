@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e011aea718c5ebb46846178568346d2f, type: 3}
-  m_Name: Holy Knight
+  m_Name: Blue Man
   m_EditorClassIdentifier: 
-  name: Holy Knight
-  species: Human
+  name: Guy 1
+  species: Robot
   magicLevel: 1
   adventurerRank: E
   height: 
@@ -24,25 +24,29 @@ MonoBehaviour:
   destination: City
   hasBag: 0
   belongings:
-  - {fileID: 5607916073220419663, guid: 3a8975cce1551cc4a8b1caf5ad6a30e3, type: 3}
-  - {fileID: 5607916073220419663, guid: 7b63e93fa4b0da640b09354050781269, type: 3}
+  - {fileID: 5607916073220419663, guid: 75e23b46f74348b438e86e547d919500, type: 3}
   - {fileID: 5607916073220419663, guid: c896c120db191b641bae695e618a854c, type: 3}
+  - {fileID: 5607916073220419663, guid: 7b63e93fa4b0da640b09354050781269, type: 3}
   - {fileID: 5607916073220419663, guid: 3eb3295c420b2fe4db0fc2019bb5ed7f, type: 3}
   - {fileID: 5607916073220419663, guid: 1fb54e5193e5f464587345a5b8b6297c, type: 3}
   - {fileID: 5607916073220419663, guid: 1fb54e5193e5f464587345a5b8b6297c, type: 3}
-  - {fileID: 5607916073220419663, guid: f742da207cf859848bee4b1ef37e7fc9, type: 3}
   goldReward: 2
   reputationReward: 5
-  reputationPenalty: 15
+  reputationPenalty: 10
   isBribing: 0
   bribeAmount: 0
   denialReason: 
-  initalDialogue: Hello there! I am just passing through on this lovely day!
+  initalDialogue: I hope you haven't seen my sworn enemy, the red dragon. He thinks
+    he's so much cooler, but what he doesn't understand is that I am superior in
+    every aspect. I'm incredibly flawless and skilled, while HE couldn't do anything
+    ever. Back in the evil wars, me and him were actually side by side. This, of
+    course, didn't last, since I was naturally better, and decided that I didn't
+    need him.
   genDialogue: []
-  belongingDialouge: Here's my stuff!
-  clearDialogue: Take care!
-  kickDialogue: I forgive you, but please let me in next time!
-  killDialogue: OH MY  G O D !
+  belongingDialouge: Huh? Oh right... my stuff. Here it is.
+  clearDialogue: 'If you see that red guy, don''t let him in. '
+  kickDialogue: You will rue the day you messed with me!
+  killDialogue: Wait, I had so much more dialogue to say!!!!
   Generation: 0
   genCount: 0
   currentImage: {fileID: 0}

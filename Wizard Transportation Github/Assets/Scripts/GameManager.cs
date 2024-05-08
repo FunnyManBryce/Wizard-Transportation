@@ -318,8 +318,10 @@ public class GameManager : MonoBehaviour
         {
             charPerDay++;
         }
-        if(Day < 9)
+        if(Day < 6)
         {
+            possibleCharacters.Add(futureCharacters[0]);
+            futureCharacters.Remove(futureCharacters[0]);
             possibleCharacters.Add(futureCharacters[0]);
             futureCharacters.Remove(futureCharacters[0]);
         }

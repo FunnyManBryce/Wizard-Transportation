@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e011aea718c5ebb46846178568346d2f, type: 3}
-  m_Name: Nate Worrior
+  m_Name: Evil Nate Worrior
   m_EditorClassIdentifier: 
   name: Guy 1
   species: Human
@@ -19,7 +19,7 @@ MonoBehaviour:
   height: 
   age: 25
   characterClass: Warrior
-  isAllowed: 1
+  isAllowed: 0
   isRobot: 0
   destination: City
   hasBag: 0
@@ -27,8 +27,8 @@ MonoBehaviour:
   - {fileID: 5607916073220419663, guid: c896c120db191b641bae695e618a854c, type: 3}
   - {fileID: 5607916073220419663, guid: 1fb54e5193e5f464587345a5b8b6297c, type: 3}
   - {fileID: 5607916073220419663, guid: 7b63e93fa4b0da640b09354050781269, type: 3}
-  - {fileID: 5607916073220419663, guid: 079eaaac4692de14288d20f17a5041d3, type: 3}
-  goldReward: 1
+  - {fileID: 5607916073220419663, guid: def7b4c9a88c0ee42b6cdeb0c6612b0f, type: 3}
+  goldReward: 0
   reputationReward: 5
   reputationPenalty: 10
   isBribing: 0
@@ -38,7 +38,7 @@ MonoBehaviour:
     rest.
   genDialogue: []
   belongingDialouge: I don't have much on me. Is this enough?
-  clearDialogue: Finally, I haven't slept in months.
+  clearDialogue: Finally, somebody bought the act...
   kickDialogue: No rest for me, I suppose...
   killDialogue: Well, this sucks.
   Generation: 0

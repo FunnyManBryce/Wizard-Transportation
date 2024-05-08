@@ -26,16 +26,17 @@ MonoBehaviour:
   belongings:
   - {fileID: 5607916073220419663, guid: c896c120db191b641bae695e618a854c, type: 3}
   - {fileID: 5607916073220419663, guid: 7b63e93fa4b0da640b09354050781269, type: 3}
+  - {fileID: 5607916073220419663, guid: 61b88f0f70786f249acd58a15a9ae3ec, type: 3}
   goldReward: 0
-  reputationReward: 1
-  reputationPenalty: 1
+  reputationReward: 5
+  reputationPenalty: 10
   isBribing: 0
   bribeAmount: 0
   denialReason: 
   initalDialogue: I'm just a super cool dude, it would be pretty epic if you let
     me in.
   genDialogue: []
-  belongingDialouge: Oh trust me bro, i'm like totally rich dude
+  belongingDialouge: Look at my totally awesome trophy bro! It's so cool.
   clearDialogue: Yoooo, that's totally radical!
   kickDialogue: Dude, that's not very tubular man.
   killDialogue: This is NOT cool, dude.

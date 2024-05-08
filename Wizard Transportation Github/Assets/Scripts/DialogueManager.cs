@@ -32,7 +32,7 @@ public class DialogueManager : MonoBehaviour
             {
                 finished = true;
             }
-            yield return new WaitForSeconds(0.075f);
+            yield return new WaitForSeconds(0.06f);
             
         }
     }
