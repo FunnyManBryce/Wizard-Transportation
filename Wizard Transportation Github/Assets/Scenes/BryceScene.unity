@@ -9744,7 +9744,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.3, y: 0}
+  m_AnchoredPosition: {x: -1.3, y: 10.1}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1924720141
@@ -9768,19 +9768,22 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'Your job is to clear people for entry to use our portal system. You have
-    until the end of the day to determine if the people trying to enter are trustworthy.
-    Make sure to follow the company guidelines, or you will be FIRED.
+    15 days to find all the robots before they take over. Make sure to follow the
+    company guidelines, or you will be FIRED.
 
 
     Rules:
 
-    1.
-    Everyone must have an ID and a ticket for entry.
+    1. Everyone must
+    have an ID and a ticket for entry.
 
-    2. No evil people allowed.
+    2. Every creature requesting entry must
+    be accepted or denied in 6 hours.
 
-    3.
-    NO ROBOTS ALLOWED'
+    2. No evil people allowed. Purple is the
+    color of evil
+
+    3. FIRE all robots. DO NOT LET THEM IN.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9807,8 +9810,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 5
-  m_fontSizeBase: 5
+  m_fontSize: 4.5
+  m_fontSizeBase: 4.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -9892,7 +9895,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -281, y: 70}
+  m_AnchoredPosition: {x: -281, y: 63.3}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1985019447
