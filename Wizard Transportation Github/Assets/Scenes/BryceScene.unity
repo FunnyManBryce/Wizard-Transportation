@@ -5377,16 +5377,44 @@ MonoBehaviour:
   - name: Main Music
     clip: {fileID: 8300000, guid: 1207be4a422e7d74facb8731c8083584, type: 3}
     loop: 1
-    initialVolume: 0
-    volume: 1.5
+    initialVolume: 1
+    volume: 1
     pitch: 1
     source: {fileID: 0}
-  - name: 
-    clip: {fileID: 0}
+  - name: Backpack_1
+    clip: {fileID: 8300000, guid: 44766caa059435f4fb71af84b2bea7e4, type: 3}
     loop: 0
-    initialVolume: 0
-    volume: 0
-    pitch: 0
+    initialVolume: 1
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Backpack_2
+    clip: {fileID: 8300000, guid: 8e746bda97a9f634f9c225c03bd4bfcb, type: 3}
+    loop: 0
+    initialVolume: 1
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Button_1
+    clip: {fileID: 8300000, guid: 245965889d0a183438ef3478b27122c0, type: 3}
+    loop: 0
+    initialVolume: 1
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Button_1
+    clip: {fileID: 8300000, guid: 245965889d0a183438ef3478b27122c0, type: 3}
+    loop: 0
+    initialVolume: 1
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Explosion
+    clip: {fileID: 8300000, guid: 1fd31868d68903d4f9e2c4a3b7ef98f3, type: 3}
+    loop: 0
+    initialVolume: 0.5
+    volume: 0.5
+    pitch: 1
     source: {fileID: 0}
 --- !u!1 &1028937561
 GameObject:
