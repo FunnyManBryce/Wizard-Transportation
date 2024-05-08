@@ -39,6 +39,7 @@ MonoBehaviour:
   genDialogue:
   - I'm a very normal wizard who loves magic yes yes.
   - Look, just because i'm evil doesn't mean you can't let me in.
+  - I'm gonna tell Evil Overlord about this if you keep denying me...
   belongingDialouge: You don't have to look at that stuff...
   clearDialogue: Excellent, he he he.
   kickDialogue: That's not very evil of you...
@@ -47,5 +48,6 @@ MonoBehaviour:
   genCount: 0
   currentImage: {fileID: 21300000, guid: fc3025c4b119a884892c7d6bde6487e0, type: 3}
   genImages:
+  - {fileID: 21300000, guid: fc3025c4b119a884892c7d6bde6487e0, type: 3}
   - {fileID: 21300000, guid: fc3025c4b119a884892c7d6bde6487e0, type: 3}
   - {fileID: 21300000, guid: fc3025c4b119a884892c7d6bde6487e0, type: 3}
