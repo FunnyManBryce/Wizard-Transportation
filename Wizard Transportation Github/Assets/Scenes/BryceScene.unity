@@ -5407,15 +5407,15 @@ MonoBehaviour:
   - name: Button_1
     clip: {fileID: 8300000, guid: 245965889d0a183438ef3478b27122c0, type: 3}
     loop: 0
-    initialVolume: 1
+    initialVolume: 1.5
     volume: 1
     pitch: 1
     source: {fileID: 0}
   - name: Explosion
     clip: {fileID: 8300000, guid: 1fd31868d68903d4f9e2c4a3b7ef98f3, type: 3}
     loop: 0
-    initialVolume: 0.5
-    volume: 0.5
+    initialVolume: 0.3
+    volume: 0.3
     pitch: 1
     source: {fileID: 0}
 --- !u!1 &1028937561
