@@ -93,6 +93,7 @@ public class GameManager : MonoBehaviour
     {
         if(dialoguePlaying == false)
         {
+            FindObjectOfType<LeoAudioManager>().Play("Button_1");
             StartCoroutine("AcceptCoroutine");
         }
     }
@@ -151,6 +152,7 @@ public class GameManager : MonoBehaviour
     {
         if (dialoguePlaying == false)
         {
+            FindObjectOfType<LeoAudioManager>().Play("Button_1");
             StartCoroutine("DenyCoroutine");
         }
     }
@@ -213,6 +215,8 @@ public class GameManager : MonoBehaviour
     {
         if (dialoguePlaying == false)
         {
+            FindObjectOfType<LeoAudioManager>().Play("Button_1");
+            FindObjectOfType<LeoAudioManager>().Play("Explosion");
             StartCoroutine("KillCoroutine");
             animator.SetTrigger("IsFiring");
         }
@@ -266,6 +270,7 @@ public class GameManager : MonoBehaviour
         {
             sigmaEnding.SetActive(true);
         }
+        FindObjectOfType<LeoAudioManager>().Stop("Explosion");
         characters.Remove(currentCharacter);
         //Destroy(currentCharacter);
         currentCharacter.SetActive(false);
@@ -344,6 +349,7 @@ public class GameManager : MonoBehaviour
         }
         else if(Day == 16 && robotsAlive <= 1)
         {
+            FindObjectOfType<LeoAudioManager>().Stop("Main Music");
             robotDefeatedEnding.SetActive(true);
         }
         if (popularity < 0 || gold < 0)
@@ -383,6 +389,7 @@ public class GameManager : MonoBehaviour
     {
         if (belongingExamined == false)
         {
+            FindObjectOfType<LeoAudioManager>().Play("Backpack_1");
             belongingExamined = true;
             currentVariables = currentCharacter.GetComponent<CharacterDisplay>().display;
 
@@ -406,10 +413,12 @@ public class GameManager : MonoBehaviour
     public void Lose()
     {
         loseScreen.SetActive(true);
+        FindObjectOfType<LeoAudioManager>().Stop("Main Music");
     }
     public void RoboTakeOver()
     {
         robotsTakeOver.SetActive(true);
+        FindObjectOfType<LeoAudioManager>().Stop("Main Music");
     }
     public void Restart()
     {
