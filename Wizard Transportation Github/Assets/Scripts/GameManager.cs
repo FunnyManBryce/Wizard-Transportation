@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
     public float deskXStart, deskXEnd;
     public float deskYStart, deskYEnd;
     private bool isDragging = false;
+    public int charactersReplaced = 0;
     public bool dialoguePlaying;
     public bool belongingExamined;
     public Animator animator;
@@ -367,9 +368,29 @@ public class GameManager : MonoBehaviour
         }
         for (int i = 1; i <= charPerDay; i++)
         {
-            currentCharacter = possibleCharacters[Random.Range(0, possibleCharacters.Count)];
-            characters.Add(currentCharacter);
-            possibleCharacters.Remove(currentCharacter);
+            if (Day > 12 && robotsAlive > 1)
+            {
+                for (int a = 0; a < possibleCharacters.Count; a++)
+                {
+                    currentCharacter = possibleCharacters[a];
+                    currentVariables = currentCharacter.GetComponent<CharacterDisplay>().display;
+                    if (currentVariables.isRobot == true)
+                    {
+                        characters.Add(currentCharacter);
+                        possibleCharacters.Remove(currentCharacter);
+                        charactersReplaced++;
+                    }
+                }
+            }
+            if(charactersReplaced == 0)
+            {
+                currentCharacter = possibleCharacters[Random.Range(0, possibleCharacters.Count)];
+                characters.Add(currentCharacter);
+                possibleCharacters.Remove(currentCharacter);
+            } else
+            {
+                charactersReplaced--;
+            }
         }
         currentCharacter = characters[0];
         currentCharacter.SetActive(true);

@@ -379,12 +379,13 @@ MonoBehaviour:
   currentVariables: {fileID: 0}
   popularity: 50
   gold: 25
-  Day: 1
+  Day: 12
   robotsAlive: 6
   deskXStart: -115
   deskXEnd: 300
   deskYStart: -100
   deskYEnd: 90
+  charactersReplaced: 0
   dialoguePlaying: 0
   belongingExamined: 0
   animator: {fileID: 1985019447}
