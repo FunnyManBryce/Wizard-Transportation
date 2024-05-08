@@ -31,7 +31,5 @@ public class TimeManager : MonoBehaviour
 
         int currentHour = Mathf.FloorToInt(currentTime / 60f);
         int currentMinute = Mathf.FloorToInt(currentTime % 60f);
-
-        //Debug.LogFormat("Current Time: {0:D2}:{1:D2}", currentHour, currentMinute);
     }
 }
