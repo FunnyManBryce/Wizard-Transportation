@@ -30,6 +30,8 @@ public class GameManager : MonoBehaviour
     private bool isDragging = false;
     public bool dialoguePlaying;
     public bool belongingExamined;
+    public Animator animator;
+    public bool isFiring = false;
     private Vector3 offset;
     public TMP_Text goldDisplay;
     public TMP_Text dayDisplay;
@@ -86,7 +88,6 @@ public class GameManager : MonoBehaviour
             popularity = 100;
             PopularityBar.SetPopularity(popularity);
         }
-
     }
     public void Accept()
     {
@@ -213,6 +214,7 @@ public class GameManager : MonoBehaviour
         if (dialoguePlaying == false)
         {
             StartCoroutine("KillCoroutine");
+            animator.SetTrigger("IsFiring");
         }
     }
     public IEnumerator KillCoroutine()
