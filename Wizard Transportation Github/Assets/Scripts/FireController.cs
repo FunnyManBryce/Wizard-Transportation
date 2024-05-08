@@ -9,6 +9,6 @@ public class FireController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        animator.SetBool("IsDashing", isDashing);
+        //animator.SetBool("IsDashing", isDashing);
     }
 }

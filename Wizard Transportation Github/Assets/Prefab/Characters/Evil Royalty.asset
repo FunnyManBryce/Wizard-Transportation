@@ -40,8 +40,8 @@ MonoBehaviour:
   - {fileID: 5607916073220419663, guid: 1fb54e5193e5f464587345a5b8b6297c, type: 3}
   - {fileID: 5607916073220419663, guid: 6a53a7fc354d7b9448e0e2f35d958400, type: 3}
   goldReward: 4
-  reputationReward: 10
-  reputationPenalty: 20
+  reputationReward: 15
+  reputationPenalty: 30
   isBribing: 0
   bribeAmount: 0
   denialReason: 

@@ -25,8 +25,8 @@ MonoBehaviour:
   hasBag: 0
   belongings: []
   goldReward: 0
-  reputationReward: 5
-  reputationPenalty: 20
+  reputationReward: 10
+  reputationPenalty: 30
   isBribing: 0
   bribeAmount: 0
   denialReason: 
@@ -40,7 +40,7 @@ MonoBehaviour:
   kickDialogue: Aww maaaaann
   killDialogue: AAAAAAAAHHHHHHHHHH!!!!
   Generation: 1
-  genCount: 2
+  genCount: 1
   currentImage: {fileID: 21300000, guid: 15a9c965a8f6c2045a2d69c916506406, type: 3}
   genImages:
   - {fileID: 21300000, guid: e3d71110c2635814b9419ea6af69d685, type: 3}
