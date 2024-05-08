@@ -5,10 +5,10 @@ using UnityEngine;
 public class FireController : MonoBehaviour
 {
     public Animator animator;
-
+    public bool isFiring;
     // Update is called once per frame
     void FixedUpdate()
     {
-        animator.SetBool("IsDashing", isDashing);
+        animator.SetBool("IsFiring", isFiring);
     }
 }
