@@ -39,6 +39,12 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         FindObjectOfType<LeoAudioManager>().Play("Main Music");
+        for (int i = 0; i <= futureCharacters.Count - 1; i++) //REALLY important for generation system to reset
+        {
+            currentCharacter = futureCharacters[i];
+            currentVariables = currentCharacter.GetComponent<CharacterDisplay>().display;
+            currentVariables.genCount = 0;
+        }
         for (int i = 0; i <= possibleCharacters.Count - 1; i++) //REALLY important for generation system to reset
         {
             currentCharacter = possibleCharacters[i];
@@ -330,11 +336,11 @@ public class GameManager : MonoBehaviour
         gold = gold - 5;
         goldDisplay.text = "Gold: " + gold;
         dayDisplay.text = "Day: " + Day;
-        if(Day == 21 && robotsAlive > 0)
+        if(Day == 16 && robotsAlive >= 2)
         {
             RoboTakeOver();
         }
-        else if(Day == 21 && robotsAlive == 0)
+        else if(Day == 16 && robotsAlive <= 1)
         {
             robotDefeatedEnding.SetActive(true);
         }

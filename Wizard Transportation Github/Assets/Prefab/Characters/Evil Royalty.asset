@@ -47,12 +47,18 @@ MonoBehaviour:
   denialReason: 
   initalDialogue: Why haven't you let me through all ready? I'm much too important
     for this.
-  genDialogue: []
+  genDialogue:
+  - Why haven't you let me through all ready? I'm much too important for this.
+  - Why haven't you let me through all ready? I'm much too important for this.
+  - Hey, Evil Overlord here. I'd  R E A L L Y  like to be let in.
   belongingDialouge: What's the holdup? I don't have time for this.
   clearDialogue: Excellent... This kingdom will be mine!
-  kickDialogue: This is absolutely proposterous!
+  kickDialogue: Fine, you caught me... i'm evil...
   killDialogue: I'm gonna tell my minions about this! Just you wait!
-  Generation: 0
+  Generation: 1
   genCount: 0
   currentImage: {fileID: 0}
-  genImages: []
+  genImages:
+  - {fileID: 21300000, guid: 46ef87f90baed5a4e871dc963488cae9, type: 3}
+  - {fileID: 21300000, guid: 16121e28e1bba6d4a8497b84b9468de5, type: 3}
+  - {fileID: 21300000, guid: 46ef87f90baed5a4e871dc963488cae9, type: 3}
