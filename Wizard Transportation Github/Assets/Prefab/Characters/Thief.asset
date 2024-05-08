@@ -37,7 +37,7 @@ MonoBehaviour:
   - {fileID: 5607916073220419663, guid: c896c120db191b641bae695e618a854c, type: 3}
   - {fileID: 5607916073220419663, guid: 7b63e93fa4b0da640b09354050781269, type: 3}
   goldReward: 25
-  reputationReward: 5
+  reputationReward: 10
   reputationPenalty: 15
   isBribing: 0
   bribeAmount: 0
@@ -52,8 +52,8 @@ MonoBehaviour:
   kickDialogue: Yeah fair.
   killDialogue: WAIT STOP IT!
   Generation: 1
-  genCount: 0
-  currentImage: {fileID: 21300000, guid: f9f2f9ca679cea24d8ec7970c024456b, type: 3}
+  genCount: 2
+  currentImage: {fileID: 21300000, guid: 15e8bd10ef3367343933451ad1623b49, type: 3}
   genImages:
   - {fileID: 21300000, guid: f9f2f9ca679cea24d8ec7970c024456b, type: 3}
   - {fileID: 21300000, guid: 15e8bd10ef3367343933451ad1623b49, type: 3}

@@ -246,7 +246,7 @@ public class GameManager : MonoBehaviour
         }
         else if (currentVariables.isAllowed == false)
         {
-            popularity = popularity - (currentVariables.reputationPenalty + 15);
+            popularity = popularity - (currentVariables.reputationReward + 30);
             PopularityBar.SetPopularity(popularity);
         }
         else if (currentVariables.isAllowed == true)
@@ -265,10 +265,6 @@ public class GameManager : MonoBehaviour
         currentCharacter.SetActive(true);
         currentVariables = currentCharacter.GetComponent<CharacterDisplay>().display;
         dialoguePlaying = false;
-        if (possibleCharacters.Count == 0 && characters.Count == 0)
-        {
-            sigmaEnding.SetActive(true);
-        }
         if (currentVariables.Generation == true)
         {
             dialogueManager.dialogueToPlay = currentVariables.genDialogue[currentVariables.genCount];
@@ -292,6 +288,7 @@ public class GameManager : MonoBehaviour
         for (int i = 1; i <= characters.Count; i++)
         {
             currentCharacter = characters[0];
+            currentCharacter.SetActive(false);
             possibleCharacters.Add(currentCharacter);
             characters.Remove(currentCharacter);
             popularity = popularity - 20;
@@ -308,6 +305,11 @@ public class GameManager : MonoBehaviour
         gamePanel.SetActive(false);
         nightPanel.SetActive(true);
         timeManager.timeScale = 0f;
+        if (possibleCharacters.Count == 0 && characters.Count == 0)
+        {
+            sigmaEnding.SetActive(true);
+            nightPanel.SetActive(false);
+        }
     }
     public void StartDay()
     {
@@ -318,7 +320,7 @@ public class GameManager : MonoBehaviour
         {
             charPerDay++;
         }
-        if(Day < 6)
+        if(Day < 7)
         {
             possibleCharacters.Add(futureCharacters[0]);
             futureCharacters.Remove(futureCharacters[0]);
@@ -328,11 +330,11 @@ public class GameManager : MonoBehaviour
         gold = gold - 5;
         goldDisplay.text = "Gold: " + gold;
         dayDisplay.text = "Day: " + Day;
-        if(Day == 16 && robotsAlive > 0)
+        if(Day == 21 && robotsAlive > 0)
         {
             RoboTakeOver();
         }
-        else if(Day == 16 && robotsAlive == 0)
+        else if(Day == 21 && robotsAlive == 0)
         {
             robotDefeatedEnding.SetActive(true);
         }
